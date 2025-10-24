@@ -25,6 +25,34 @@ jobs:
           repository: evotext/runestaves_data
           path: runestaves_data
           token: ${{ secrets.DATA_REPO_PAT || secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+        id: checkout-data
+
+      - name: Check data repository
+        run: |
+          if [ ! -d "runestaves_data/zenodo/data" ]; then
+            echo "❌ Data repository checkout failed!"
+            echo ""
+            echo "The evotext/runestaves_data repository appears to be private."
+            echo "To fix this, you need to create a Personal Access Token (PAT):"
+            echo ""
+            echo "1. Go to: https://github.com/settings/tokens"
+            echo "2. Click 'Generate new token (classic)'"
+            echo "3. Name: runestaves_viz_deploy"
+            echo "4. Select scope: repo (Full control of private repositories)"
+            echo "5. Copy the generated token"
+            echo ""
+            echo "Then add it as a repository secret:"
+            echo "6. Go to: https://github.com/${{ github.repository }}/settings/secrets/actions"
+            echo "7. Click 'New repository secret'"
+            echo "8. Name: DATA_REPO_PAT"
+            echo "9. Value: Paste your token"
+            echo "10. Re-run this workflow"
+            echo ""
+            echo "Alternatively, if the data can be public, make evotext/runestaves_data public."
+            exit 1
+          fi
+          echo "✓ Data repository checkout successful"
 
       - name: Set up Python
         uses: actions/setup-python@v5
