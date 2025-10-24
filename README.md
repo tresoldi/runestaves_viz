@@ -115,19 +115,37 @@ The repository includes a GitHub Actions workflow that automatically builds and 
 
 **First-time setup:**
 
-1. Go to your repository on GitHub: `https://github.com/tresoldi/runestaves_viz`
-2. Navigate to **Settings** → **Pages**
-3. Under "Build and deployment":
-   - **Source**: Select "Deploy from a branch"
-   - **Branch**: Select `gh-pages` and `/ (root)`
-   - Click **Save**
-4. Push to the `master` branch - the workflow will trigger automatically
-5. After 2-5 minutes, your site will be live at:
-   `https://tresoldi.github.io/runestaves_viz/`
+1. **Set up data repository access** (if `evotext/runestaves_data` is private):
 
-The workflow requires access to the `evotext/runestaves_data` repository. If it's private, ensure:
-- The workflow has permissions to access it (GITHUB_TOKEN should work for public repos)
-- For private repos, you may need to add a Personal Access Token as a secret
+   a. Create a Personal Access Token (PAT):
+      - Go to https://github.com/settings/tokens
+      - Click "Generate new token" → "Generate new token (classic)"
+      - Give it a name: "runestaves_viz_deploy"
+      - Select scopes: ✓ `repo` (Full control of private repositories)
+      - Click "Generate token"
+      - **Copy the token immediately** (you won't see it again!)
+
+   b. Add the token as a repository secret:
+      - Go to https://github.com/tresoldi/runestaves_viz/settings/secrets/actions
+      - Click "New repository secret"
+      - Name: `DATA_REPO_PAT`
+      - Value: Paste the token you just created
+      - Click "Add secret"
+
+2. **Enable GitHub Pages:**
+   - Go to https://github.com/tresoldi/runestaves_viz/settings/pages
+   - Under "Build and deployment":
+     - **Source**: Select "Deploy from a branch"
+     - **Branch**: Select `gh-pages` and `/ (root)`
+     - Click **Save**
+
+3. **Trigger deployment:**
+   - Push to the `master` branch (or manually trigger from Actions tab)
+   - Check progress at https://github.com/tresoldi/runestaves_viz/actions
+   - After 2-5 minutes, your site will be live at:
+     `https://tresoldi.github.io/runestaves_viz/`
+
+**Note:** If `evotext/runestaves_data` is public, step 1 is not needed - the workflow will use the default `GITHUB_TOKEN`.
 
 #### Manual Deployment
 

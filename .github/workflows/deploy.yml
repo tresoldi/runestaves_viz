@@ -24,7 +24,7 @@ jobs:
         with:
           repository: evotext/runestaves_data
           path: runestaves_data
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.DATA_REPO_PAT || secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
