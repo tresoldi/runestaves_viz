@@ -68,12 +68,14 @@ def build_calendar_pages(
     version: str,
     build_date: str,
     config: dict,
+    base_path: str = '',
 ) -> None:
     """Build individual calendar detail pages."""
     print(f"Building calendar pages ({lang})...")
 
-    base_url = '' if lang == 'sv' else '/en'
-    lang_switch_base = '/en' if lang == 'sv' else ''
+    lang_path = '' if lang == 'sv' else '/en'
+    base_url = f'{base_path}{lang_path}'
+    lang_switch_base = f'{base_path}/en' if lang == 'sv' else base_path
     output_subdir = 'kalendrar' if lang == 'sv' else 'en/calendars'
 
     for _, row in inventory.iterrows():
@@ -129,10 +131,13 @@ def main():
     parser = argparse.ArgumentParser(description='Build static site')
     parser.add_argument('--data-dir', type=Path, required=True)
     parser.add_argument('--site-dir', type=Path, required=True)
+    parser.add_argument('--base-path', type=str, default='',
+                        help='Base path for deployment (e.g., /runestaves_viz for GitHub Pages)')
     args = parser.parse_args()
 
     data_dir = args.data_dir
     site_dir = args.site_dir
+    base_path = args.base_path.rstrip('/')  # Remove trailing slash if present
     project_root = Path(__file__).parent.parent
 
     # Load version and build date
@@ -178,8 +183,10 @@ def main():
         print('=' * 60)
 
         translations = load_translations(lang, i18n_dir)
-        base_url = '' if lang == 'sv' else '/en'
-        lang_switch_base = '/en' if lang == 'sv' else ''
+        # Construct base_url with deployment base path
+        lang_path = '' if lang == 'sv' else '/en'
+        base_url = f'{base_path}{lang_path}'
+        lang_switch_base = f'{base_path}/en' if lang == 'sv' else base_path
 
         # Common context for all pages
         common_context = {

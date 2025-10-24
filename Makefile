@@ -11,6 +11,7 @@ RELEASE_DIR := ../runestaves_data/release
 SITE_DIR := site
 SCRIPTS_DIR := scripts
 PORT := 8000
+BASE_PATH :=  # Empty for local dev, set to /runestaves_viz for GitHub Pages
 
 help:
 	@echo "Runestaves Visualization - Build System"
@@ -45,7 +46,7 @@ site-prepare:
 
 site-build: site-prepare
 	@echo "Building static site..."
-	$(VENV)/bin/python $(SCRIPTS_DIR)/build_site.py --data-dir $(DATA_DIR) --site-dir $(SITE_DIR)
+	$(VENV)/bin/python $(SCRIPTS_DIR)/build_site.py --data-dir $(DATA_DIR) --site-dir $(SITE_DIR) $(if $(BASE_PATH),--base-path $(BASE_PATH))
 	@echo "✓ Site build complete"
 
 site-validate:
