@@ -2,8 +2,8 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    tags:
-      - 'v*'  # Trigger on version tags (e.g., v1.0.0)
+    branches:
+      - master  # Deploy on push to master branch
   workflow_dispatch:  # Allow manual triggering
 
 permissions:
@@ -22,9 +22,9 @@ jobs:
       - name: Checkout data repository
         uses: actions/checkout@v4
         with:
-          repository: ${{ secrets.DATA_REPO }}  # e.g., 'username/runestaves_data'
-          path: ../runestaves_data
-          token: ${{ secrets.DATA_REPO_TOKEN }}  # Personal access token if private
+          repository: evotext/runestaves_data
+          path: runestaves_data
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -40,20 +40,24 @@ jobs:
       - name: Validate data
         run: |
           python scripts/validate_data.py \
-            --data-dir ../runestaves_data/zenodo/data \
-            --strict
+            --data-dir runestaves_data/zenodo/data
 
       - name: Prepare data files
         run: |
-          make site-prepare
+          python scripts/prepare_data.py \
+            --data-dir runestaves_data/zenodo/data \
+            --release-dir runestaves_data/release \
+            --output-dir site/data
 
       - name: Build static site
         run: |
-          make site-build
+          python scripts/build_site.py \
+            --data-dir runestaves_data/zenodo/data \
+            --site-dir site
 
       - name: Validate generated site
         run: |
-          make site-validate || true  # Don't fail on validation warnings
+          python scripts/validate_site.py --site-dir site || true
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

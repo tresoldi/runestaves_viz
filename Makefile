@@ -82,7 +82,7 @@ deploy:
 	@cp -r $(SITE_DIR)/* .
 	@git add -A
 	@git commit -m "Deploy site - $$(date -I)" || echo "No changes to deploy"
-	@git checkout main
+	@git checkout master
 	@echo "✓ Deployed to gh-pages. Push with: git push origin gh-pages"
 
 test:

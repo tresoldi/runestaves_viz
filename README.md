@@ -109,9 +109,32 @@ Open http://localhost:8000 in your browser.
 
 ### 5. Deploy to GitHub Pages
 
+#### Automatic Deployment (Recommended)
+
+The repository includes a GitHub Actions workflow that automatically builds and deploys to GitHub Pages on every push to the `master` branch.
+
+**First-time setup:**
+
+1. Go to your repository on GitHub: `https://github.com/tresoldi/runestaves_viz`
+2. Navigate to **Settings** → **Pages**
+3. Under "Build and deployment":
+   - **Source**: Select "Deploy from a branch"
+   - **Branch**: Select `gh-pages` and `/ (root)`
+   - Click **Save**
+4. Push to the `master` branch - the workflow will trigger automatically
+5. After 2-5 minutes, your site will be live at:
+   `https://tresoldi.github.io/runestaves_viz/`
+
+The workflow requires access to the `evotext/runestaves_data` repository. If it's private, ensure:
+- The workflow has permissions to access it (GITHUB_TOKEN should work for public repos)
+- For private repos, you may need to add a Personal Access Token as a secret
+
+#### Manual Deployment
+
 ```bash
 make site-release  # Full build + validation
 make deploy        # Push to gh-pages branch
+git push origin gh-pages  # Push the deployment
 ```
 
 ## Build System
