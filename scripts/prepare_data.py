@@ -201,35 +201,40 @@ def generate_map_markers(
         # Get symbol category flags
         symbol_flags = symbol_categories.get(cal_id, {})
 
+        # Helper to convert NaN to empty string
+        def safe_get(key, default=''):
+            val = row.get(key, default)
+            return default if pd.isna(val) else val
+
         properties = {
             # Identification
             'cal_id': cal_id,
-            'catalog': row.get('cal_label', ''),
+            'catalog': safe_get('cal_label'),
             # Provenance
-            'institute_id': row.get('institute', ''),
-            'location_id': row.get('location_id', ''),
-            'location_name': row.get('location_name', ''),
-            'socken': row.get('socken', ''),
-            'diocese_id': row.get('diocese_id', ''),
-            'diocese_name': row.get('diocese_name', ''),
+            'institute_id': safe_get('institute'),
+            'location_id': safe_get('location_id'),
+            'location_name': safe_get('location_name'),
+            'socken': safe_get('socken'),
+            'diocese_id': safe_get('diocese_id'),
+            'diocese_name': safe_get('diocese_name'),
             # Location precision
-            'location_precision': row.get('precision', 'unknown'),
+            'location_precision': safe_get('precision', 'unknown'),
             # Dating
-            'year': row.get('year', ''),
+            'year': safe_get('year'),
             'year_min': row['year_min'] if not pd.isna(row['year_min']) else None,
             'year_max': row['year_max'] if not pd.isna(row['year_max']) else None,
             'period_bucket_en': row['period_en'],
             'period_bucket_sv': row['period_sv'],
             # Physical
-            'material_primary': row.get('material_primary', ''),
-            'material_secondary': row.get('material_secondary1', ''),
-            'shape': row.get('shape', ''),
+            'material_primary': safe_get('material_primary'),
+            'material_secondary': safe_get('material_secondary1'),
+            'shape': safe_get('shape'),
             'sides': int(row['sides']) if pd.notna(row.get('sides')) and str(row.get('sides', '')).isdigit() else None,
             # Notation
-            'row_fest': row.get('row_fest', ''),
-            'solar': row.get('solar', ''),
+            'row_fest': safe_get('row_fest'),
+            'solar': safe_get('solar'),
             # Data quality
-            'completed': row.get('completed', ''),
+            'completed': safe_get('completed'),
             # Links
             'detail_url_sv': f'/kalendrar/{cal_id}.html',
             'detail_url_en': f'/en/calendars/{cal_id}.html',
