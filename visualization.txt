@@ -1,0 +1,452 @@
+Perfect. Below is a **self-contained specification document** you can give directly to an AI coding agent as input. It contains all necessary instructions and context for implementing the Runestaves Data web interface, assuming the dataset documentation is available separately. It defines structure, data flow, components, and visual/technical behavior precisely. No reference to this chat is needed.
+
+---
+
+# Runestaves Data — Static Web Interface Specification
+
+## 1. Overview
+
+The goal is to build a **fully static**, **bilingual** (Swedish and English) web interface for the **Runestaves Data** project.
+The site will be generated **once** via Python scripts, deployed to **GitHub Pages**, and require **no server-side logic** or Node-based build system.
+
+The target audience includes the **general Swedish public**, **museum visitors**, and **heritage researchers**.
+The visual tone should be **inviting and educational**, appropriate for presentation by institutions such as **SVT** or **Uppsala University**, while remaining professional and accessible.
+
+---
+
+## 2. Technical Summary
+
+* **Deployment**: GitHub Pages (static `/site` folder)
+* **Generation**: Python scripts (no Node/SCSS)
+* **Templates**: Jinja2
+* **CSS Framework**: Pico.css (via CDN) + custom `site.css`
+* **JavaScript (via CDN)**:
+
+  * Leaflet + MarkerCluster (for map)
+  * Fuse.js (for search)
+  * D3.js (for small charts)
+* **Languages**: Swedish (default) and English (mirrored paths)
+* **Images**: Placeholder only for now
+* **Map Tiles**: OpenStreetMap standard raster tiles with attribution
+* **Release**: Build and publish on tagged releases only
+* **License**: CC-BY 4.0 displayed in footer
+* **Logos reserved**: Uppsala University, Riksbankens Jubileumsfond (RJ)
+
+---
+
+## 3. Site Structure and URLs
+
+**Swedish (default):**
+
+* `/` — Start / Map
+* `/bladdra/` — Browse (list/grid)
+* `/kalendrar/<cal_id>.html` — Individual calendar pages
+* `/metod/` — Methods (including phylogeny)
+* `/om/` — About
+* `/data/` — Data and citation
+
+**English (mirrored under `/en`):**
+
+* `/en/`, `/en/browse/`, `/en/calendars/<cal_id>.html`, `/en/methods/`, `/en/about/`, `/en/data/`
+
+Language switcher links to the mirrored path.
+
+---
+
+## 4. Data Inputs and Outputs
+
+### Inputs
+
+All TSV files from the dataset repository:
+
+* `inventory.tsv`
+* `individual.tsv`
+* `generated/symbol_instances.tsv`
+* `gazetteer.tsv`
+* Lookups (`symbol_types.tsv`, `feast_canonical.tsv`, `feast_normalization_map.tsv`)
+* `grotefend.tsv`
+
+### Outputs (written to `/site/data/`)
+
+#### 1. `map_markers.geojson`
+
+Each feature corresponds to one calendar.
+
+* **Geometry**: coordinates from `gazetteer.tsv` (`location_id`)
+* **Properties**:
+
+  * Identification: `cal_id`, `catalog`
+  * Provenance: `institute_id`, `institute_name`, `location_id`, `location_name`, `socken`, `diocese_id`, `diocese_name`
+  * Dating: `year`, `year_min`, `year_max`, `period_bucket`
+  * Physical: `material_primary`, `material_secondary`, `shape`, `sides`
+  * Notation: `row_fest`, `solar`
+  * Data quality: `completed`, `transcriber`
+  * Symbol categories (boolean flags):
+    `has_religious`, `has_liturgical`, `has_royal`, `has_agricultural`, `has_tools`, `has_occupational`, `has_drinking`, `has_animals`, `has_human`, `has_plants`, `has_geometric`, `has_natural_phenomena`, `has_text`, `has_notation`, `has_generic`
+  * Links: `detail_url_sv`, `detail_url_en`
+
+#### 2. `search_docs.json`
+
+Compact entries for Fuse.js search:
+
+* `cal_id`, `catalog`
+* `institute_name`, `diocese_name`, `location_name`, `socken`
+* `year_min`, `year_max`, `period_bucket`
+* `signals_symbols` (up to 5 most frequent)
+* `signals_feasts` (up to 5 most frequent canonical feast names)
+
+#### 3. `stats.json`
+
+Global summary for charts:
+
+* Counts by `period_bucket`, `diocese_name`, `material_primary`, `shape`, and **symbol category**
+
+#### 4. Per-calendar embedded JSON
+
+Each calendar page includes:
+
+```html
+<script type="application/json" id="caldata">…</script>
+```
+
+Contents:
+
+* `inventory` fields (core descriptive metadata)
+* All rows from `individual` for that calendar:
+
+  * `month`, `day`, `day_of_year`, `fest`, `fest_canonical_id`, `fest_canonical`, `fest_type`, `golden_number`, `sunday_letter`, `rune`, `fest_mark`, `notes`
+* Aggregated symbols:
+
+  * Counts by `symbol_type` and by **category**
+  * Top 10 co-occurring symbol pairs
+  * All rows with `tertiary_modifier`
+  * Distinct `writing_text` (up to 25 items)
+* Location info: coordinates, `location_name`, `diocese_name`
+
+If file size exceeds a threshold, load the JSON dynamically from `/caldata/<cal_id>.json`.
+
+---
+
+## 5. Historical Period Buckets
+
+Assign one period to each calendar based on midpoint of `year_min` and `year_max`.
+
+| Range     | Swedish Label | English Label |
+| --------- | ------------- | ------------- |
+| ≤1527     | Medeltid      | Medieval      |
+| 1528–1600 | 1500-talet    | 16th century  |
+| 1601–1700 | 1600-talet    | 17th century  |
+| 1701–1800 | 1700-talet    | 18th century  |
+| 1801–1900 | 1800-talet    | 19th century  |
+| Unknown   | Okänt         | Unknown       |
+
+---
+
+## 6. Home Page (Interactive Map)
+
+* **Map framework**: Leaflet + MarkerCluster
+* **Basemap**: OpenStreetMap Standard (with attribution)
+* **Markers**: custom SVG symbols, color-coded by `period_bucket`
+* **Clusters**: smooth expand animation
+* **Filters** (collapsible sidebar):
+
+  * Period
+  * Diocese
+  * Material
+  * Shape
+  * Sides
+  * Row (`row_fest`)
+  * Solar (`solar`)
+  * Completeness
+  * Symbol category (multi-select)
+* **Active filter chips** displayed under header
+* **Result counter**: “Visar X / 891” (SV) / “Showing X of 891” (EN)
+* **Marker popup**:
+
+  * Bold `catalog` + monospaced `cal_id`
+  * Location and diocese line
+  * Badges for period, material, shape
+  * Button to detail page (language-aware)
+* **Fallback mode**: if tiles fail, display points over a neutral Nordic outline map.
+
+---
+
+## 7. Browse Page
+
+* Displays the same calendars as the map view
+* Uses the same filters
+* Displays as **cards** with:
+
+  * `catalog` and `cal_id`
+  * location, diocese
+  * badges (period, material, shape)
+  * up to 3 symbol-category hints
+  * “Visa kalender / View calendar” button
+* Sorting: A–Ö / A–Z (catalog), period, diocese
+* Client-side pagination (≈48 per page)
+
+---
+
+## 8. Calendar Detail Pages
+
+**Header**
+
+* Title: `catalog` and `cal_id`
+* Badges: period, diocese, location
+* Placeholder image with caption “Bild kommer snart / Image coming soon”
+
+**At-a-glance section**
+
+* Material(s), shape, sides, dimensions, row_fest, solar, completeness, transcribers, institute
+
+**Mini map**
+
+* Leaflet centered on calendar location
+* Button: “Visa på kartan / Show on map” returns to homepage with calendar highlighted
+
+**Feasts table**
+
+* Full 365/366 rows with sticky header
+* Columns: Month | Day | Day-of-year | Fest (original) | Canonical | Type | Golden number | Sunday letter | Rune | Fest mark | Notes
+* Toolbar: month dropdown, type checkboxes, in-page search
+* Responsive design: stacked rows on mobile
+
+**Feast summaries**
+
+* Small D3 charts:
+
+  * Feasts by month (bar)
+  * Feasts by type (bar)
+
+**Symbols section**
+
+* Table: top symbol types (count)
+* Chart: counts by symbol category
+* Table: top co-occurring pairs
+* List: days with complex marks (`tertiary_modifier`)
+* List: writing texts (top 25; expandable)
+* Category tooltips (translated)
+
+**Dating and context**
+
+* Show original `year` and normalized range
+* Note on uncertainty
+* Period label with short explanation
+
+**References and data**
+
+* Mention Grotefend use internally
+* DOI badge
+* Links to Zenodo and GitHub only
+
+**Footer**
+
+* CC-BY 4.0 license
+* Uppsala University and RJ logo placeholders
+* General museum acknowledgment line
+
+---
+
+## 9. Methods Page
+
+Includes text and figures:
+
+* Dendrogram (`assets/phylogeny_dendrogram.png`)
+* PCA projection (`assets/phylogeny_pca.png`)
+* Short explanatory captions:
+
+**Swedish captions**
+
+* Dendrogram:
+  “Hierarkiskt klusterträd baserat på närvaro/avsaknad av 268 normaliserade högtider på 669 runstavar. Avstånd beräknas i ett PCA-rum (3 komponenter; 27 % varians). Genomsnittslänkage (UPGMA).”
+* PCA:
+  “PCA-projektion av runstavar (tvådimensionella vyer ur tre komponenter). Färger markerar perioder; former markerar stift.”
+
+**English captions**
+
+* Dendrogram:
+  “Hierarchical clustering tree based on presence/absence of 268 canonical feasts across 669 runestaves. Distances computed in 3-component PCA space (27 % variance). Average linkage (UPGMA).”
+* PCA:
+  “PCA projection of runestaves (two-dimensional views from three components). Colors encode periods; shapes encode dioceses.”
+
+---
+
+## 10. About and Data Pages
+
+**About (`/om/` / `/en/about/`)**
+
+* Description of runestaves and project purpose
+* Project team (short bios)
+* Funding (RJ)
+* Affiliation (Uppsala University)
+* Museum acknowledgments
+* Contact
+* License (CC-BY 4.0)
+
+**Data (`/data/` / `/en/data/`)**
+
+* Zenodo DOI badge
+* GitHub repository link
+* License and reuse terms
+* Citation (BibTeX block)
+
+---
+
+## 11. Bilingual Implementation
+
+* Translations stored in `i18n/sv.json` and `i18n/en.json`
+* All interface strings (navigation, filters, tooltips, chart captions, etc.) loaded from these dictionaries
+* Month and feast-type names localized during HTML rendering
+* Language switcher links to mirrored URL path
+* Optional: remember user preference with `localStorage`
+
+---
+
+## 12. Feasts and External References
+
+* Each `feast_canonical` may include a `wikidata_id`
+* If available, display small external-link icons (“Wikidata” / “Wikipedia”) next to canonical feast names
+* Maintain a TSV mapping table (`feast_wikidata.tsv`) for Wikidata IDs:
+
+  * Prefill automatically from public data sources
+  * Confirm manually later
+* Feasts without IDs simply display as plain text
+
+---
+
+## 13. Styling and UX
+
+* **Base framework**: Pico.css via CDN
+* **Custom file**: `assets/site.css`
+
+  * Palette, typography, badges, filters, map tweaks, responsive tables
+  * Respect `prefers-reduced-motion`
+  * Maintain readability; no minification
+* **Color scheme**: calm heritage palette (browns, deep reds, golds, muted blues)
+* **Animations**: gentle fade/slide for map and cards
+
+---
+
+## 14. Accessibility
+
+* Semantic HTML with `<caption>` and `<th scope>` in tables
+* Keyboard navigation for all interactive elements
+* ARIA labels for filters, map controls, and search
+* WCAG 2.1 AA contrast compliance
+* `prefers-reduced-motion` honored
+
+---
+
+## 15. Build System (Makefile)
+
+Targets:
+
+1. `site-prepare`
+
+   * Validate TSVs (Pandera)
+   * Generate `map_markers.geojson`, `search_docs.json`, `stats.json`
+   * Summarize per-calendar data
+   * Copy assets
+2. `site-build`
+
+   * Render all pages (SV/EN) from templates
+   * Copy CSS, JS, and images to `/site/assets`
+   * Add `.nojekyll`
+3. `site-validate`
+
+   * JSON schema checks
+   * Internal link checker
+   * Accessibility test (Pa11y)
+4. `site-serve`
+
+   * Local preview: `python -m http.server`
+5. `site-clean`
+
+   * Remove build artifacts
+
+Structure:
+
+```
+/templates/           # Jinja2 templates
+/i18n/                # sv.json, en.json
+/static/assets/       # CSS, placeholder, logos
+/scripts/site_build.py
+/scripts/site_schemas.py
+/site/                # built static site (published)
+```
+
+---
+
+## 16. Release Workflow
+
+* Triggered on a **Git tag** (e.g., `v1.0.0`)
+* Run `make site-prepare`, `make site-build`, `make site-validate`
+* Publish `/site` to `gh-pages` branch
+* Add `.nojekyll` to bypass Jekyll
+* Footer text:
+  “Version X.Y.Z • Last updated YYYY-MM-DD”
+
+---
+
+## 17. Search Functionality
+
+* Global search bar in header or expandable panel
+* Uses Fuse.js with `search_docs.json`
+* Searchable fields: `cal_id`, `catalog`, `diocese_name`, `location_name`, `socken`, `period_bucket`, `signals_symbols`, `signals_feasts`
+* Results: list of cards linking to calendar pages, with highlighted matches
+
+---
+
+## 18. Accessibility and Performance Testing
+
+* JSON schema validation for all data files
+* Internal link integrity check
+* Accessibility tests (Pa11y) on:
+
+  * Home (SV and EN)
+  * Browse
+  * One large calendar page
+  * Methods
+  * Data
+* Manual tests on mobile devices for filters, map, and tables
+* Performance targets:
+
+  * `map_markers.geojson` ≤ 800 KB
+  * Lazy initialization of charts
+  * Map loads within 2 s on broadband
+
+---
+
+## 19. Branding and Credits
+
+* Uppsala University and RJ logos in footer (placeholders until final assets)
+* Short museum acknowledgments line on About page and footer
+* General color theme: heritage tones (gold, brown, red)
+* Typography: clean sans-serif (default Pico.css)
+
+---
+
+## 20. Deliverables
+
+* Static `/site` directory ready for GH Pages
+* Build scripts (`site_build.py`, `Makefile`)
+* Templates and assets
+* i18n JSON files
+* JSON schema definitions for validation
+* Documentation (`README.md`) explaining how to rebuild and deploy
+
+---
+
+## 21. Optional Future Enhancements (not part of initial build)
+
+* Add actual calendar images and per-calendar museum credits
+* Add legend for rune and feast marks
+* Add lightweight timeline view
+* Allow highlighting feast types on map
+* Add social-media preview images
+* Integrate feedback/contact form (static mailto or GitHub link)
+
+---
+
+### End of Specification
+

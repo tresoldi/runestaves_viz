@@ -1,0 +1,233 @@
+{% extends "base.html" %}
+
+{% block title %}{{ calendar.catalog }} – {{ t.site.title }}{% endblock %}
+
+{% block extra_head %}
+{# Leaflet for mini map #}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+{# D3.js for charts #}
+<script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+{% endblock %}
+
+{% block content %}
+<div class="calendar-page">
+    {# Back navigation #}
+    <nav aria-label="breadcrumb">
+        <a href="{{ base_url }}/">← {{ t.calendar.back_to_map }}</a>
+    </nav>
+
+    {# Header with catalog info #}
+    <header class="calendar-header">
+        <h1>{{ calendar.catalog }}</h1>
+        <p class="cal-id"><code>{{ calendar.id }}</code></p>
+
+        <div class="calendar-badges">
+            <span class="badge badge-period">{{ calendar.period }}</span>
+            {% if calendar.diocese_name %}
+            <span class="badge badge-diocese">{{ calendar.diocese_name }}</span>
+            {% endif %}
+            {% if calendar.location_name %}
+            <span class="badge badge-location">{{ calendar.location_name }}</span>
+            {% endif %}
+        </div>
+    </header>
+
+    {# Placeholder image #}
+    <figure class="calendar-image">
+        <div class="image-placeholder">
+            <p>{{ t.browse.no_image }}</p>
+        </div>
+        <figcaption>{{ calendar.catalog }} ({{ calendar.id }})</figcaption>
+    </figure>
+
+    {# At-a-glance metadata #}
+    <section class="calendar-overview">
+        <h2>{{ t.calendar.overview }}</h2>
+        <dl class="metadata-grid">
+            {% if calendar.institute %}
+            <dt>{{ t.calendar.metadata.institute }}</dt>
+            <dd>{{ calendar.institute }}</dd>
+            {% endif %}
+
+            {% if calendar.location_name %}
+            <dt>{{ t.calendar.metadata.location }}</dt>
+            <dd>{{ calendar.location_name }}</dd>
+            {% endif %}
+
+            {% if calendar.diocese_name %}
+            <dt>{{ t.calendar.metadata.diocese }}</dt>
+            <dd>{{ calendar.diocese_name }}</dd>
+            {% endif %}
+
+            {% if calendar.material_primary %}
+            <dt>{{ t.calendar.metadata.material }}</dt>
+            <dd>{{ calendar.material_primary }}{% if calendar.material_secondary %}, {{ calendar.material_secondary }}{% endif %}</dd>
+            {% endif %}
+
+            {% if calendar.shape %}
+            <dt>{{ t.calendar.metadata.shape }}</dt>
+            <dd>{{ calendar.shape }}</dd>
+            {% endif %}
+
+            {% if calendar.sides %}
+            <dt>{{ t.calendar.metadata.sides }}</dt>
+            <dd>{{ calendar.sides }}</dd>
+            {% endif %}
+
+            {% if calendar.solar %}
+            <dt>{{ t.calendar.metadata.solar }}</dt>
+            <dd>{{ calendar.solar }}</dd>
+            {% endif %}
+
+            {% if calendar.completed %}
+            <dt>{{ t.calendar.metadata.completeness }}</dt>
+            <dd>{{ calendar.completed }}</dd>
+            {% endif %}
+        </dl>
+    </section>
+
+    {# Mini map #}
+    {% if calendar.latitude and calendar.longitude %}
+    <section class="calendar-location">
+        <h3>{{ t.calendar.metadata.location }}</h3>
+        <div id="mini-map" style="height: 300px;" aria-label="{{ t.calendar.show_on_map }}"></div>
+        <p>
+            <a href="{{ base_url }}/?highlight={{ calendar.id }}" class="secondary">
+                🗺 {{ t.calendar.show_on_map }}
+            </a>
+        </p>
+    </section>
+    {% endif %}
+
+    {# Feasts table #}
+    <section class="calendar-feasts">
+        <h2>{{ t.calendar.feasts }}</h2>
+
+        {# Toolbar for filtering/searching feasts #}
+        <div class="feast-toolbar">
+            <label for="month-filter">{{ t.calendar.feast_table.filter_month }}</label>
+            <select id="month-filter">
+                <option value="">{{ t.filters.all }}</option>
+                {% for month_num in range(1, 13) %}
+                <option value="{{ month_num }}">{{ t.months[month_num|string] }}</option>
+                {% endfor %}
+            </select>
+
+            <label for="feast-search">{{ t.calendar.feast_table.search_feasts }}</label>
+            <input type="search" id="feast-search" placeholder="{{ t.calendar.feast_table.search_feasts }}">
+        </div>
+
+        {# Feasts table - populated by embedded JSON or loaded dynamically #}
+        <div class="table-container">
+            <table id="feast-table">
+                <thead>
+                    <tr>
+                        <th>{{ t.calendar.feast_table.month }}</th>
+                        <th>{{ t.calendar.feast_table.day }}</th>
+                        <th>{{ t.calendar.feast_table.day_of_year }}</th>
+                        <th>{{ t.calendar.feast_table.feast_original }}</th>
+                        <th>{{ t.calendar.feast_table.feast_canonical }}</th>
+                        <th>{{ t.calendar.feast_table.type }}</th>
+                        <th>{{ t.calendar.feast_table.rune }}</th>
+                        <th>{{ t.calendar.feast_table.notes }}</th>
+                    </tr>
+                </thead>
+                <tbody id="feast-table-body">
+                    {# Populated by JavaScript #}
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    {# Symbol summary #}
+    <section class="calendar-symbols">
+        <h2>{{ t.calendar.symbols }}</h2>
+
+        <div class="symbol-grid">
+            <div class="symbol-by-type">
+                <h3>{{ t.calendar.symbol_summary.by_type }}</h3>
+                <div id="symbol-type-chart"></div>
+            </div>
+
+            <div class="symbol-by-category">
+                <h3>{{ t.calendar.symbol_summary.by_category }}</h3>
+                <div id="symbol-category-chart"></div>
+            </div>
+        </div>
+
+        <div id="symbol-details">
+            {# Populated by JavaScript from calendar data #}
+        </div>
+    </section>
+
+    {# Dating and context #}
+    <section class="calendar-dating">
+        <h2>{{ t.calendar.dating }}</h2>
+        <dl>
+            {% if calendar.year %}
+            <dt>{{ t.calendar.dating_info.original }}</dt>
+            <dd>{{ calendar.year }}</dd>
+            {% endif %}
+
+            {% if calendar.year_min and calendar.year_max %}
+            <dt>{{ t.calendar.dating_info.normalized }}</dt>
+            <dd>{{ calendar.year_min }}–{{ calendar.year_max }}</dd>
+            {% endif %}
+
+            {% if calendar.period %}
+            <dt>{{ t.calendar.metadata.period }}</dt>
+            <dd>{{ calendar.period }}</dd>
+            {% endif %}
+        </dl>
+    </section>
+
+    {# References and data #}
+    <section class="calendar-references">
+        <h2>{{ t.calendar.references }}</h2>
+        <p>
+            <a href="{{ zenodo_url }}" target="_blank" rel="noopener">
+                <img src="https://zenodo.org/badge/DOI/{{ zenodo_doi }}.svg" alt="DOI">
+            </a>
+        </p>
+        <p>
+            <a href="{{ github_url }}" target="_blank" rel="noopener">
+                View on GitHub
+            </a>
+        </p>
+    </section>
+</div>
+
+{# Embedded calendar data or reference to external file #}
+{% if embed_data %}
+<script type="application/json" id="caldata">
+{{ calendar_data | safe }}
+</script>
+{% else %}
+<script>
+    const calendarDataUrl = '{{ base_url }}/data/calendars/{{ calendar.id }}.json';
+</script>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+{# Leaflet for mini map #}
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+
+{# Custom calendar detail script #}
+<script src="{{ base_url }}/assets/calendar.js"></script>
+
+{# Initialize calendar page #}
+<script>
+    const calendarConfig = {
+        lang: '{{ lang }}',
+        baseUrl: '{{ base_url }}',
+        calId: '{{ calendar.id }}',
+        embedData: {{ 'true' if embed_data else 'false' }},
+        translations: {{ t | tojson }},
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+        initializeCalendar(calendarConfig);
+    });
+</script>
+{% endblock %}

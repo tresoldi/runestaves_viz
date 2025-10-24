@@ -1,0 +1,241 @@
+{
+  "site": {
+    "title": "Runstavar – En digital katalog",
+    "description": "Utforska Sveriges runstavar: medeltida kalendrar ristade i trä, bevarade i museers samlingar",
+    "language": "Svenska",
+    "language_code": "sv",
+    "version": "Version",
+    "last_updated": "Senast uppdaterad"
+  },
+
+  "nav": {
+    "home": "Start",
+    "map": "Karta",
+    "browse": "Bläddra",
+    "methods": "Metod",
+    "about": "Om",
+    "data": "Data",
+    "search": "Sök",
+    "language_switch": "Switch to English"
+  },
+
+  "map": {
+    "title": "Runstavar på kartan",
+    "showing": "Visar",
+    "of": "av",
+    "calendars": "runstavar",
+    "filters": "Filter",
+    "clear_filters": "Rensa filter",
+    "no_results": "Inga runstavar matchar dina filter",
+    "loading": "Laddar karta...",
+    "cluster_text": "runstavar",
+    "view_details": "Visa detaljer"
+  },
+
+  "filters": {
+    "period": "Period",
+    "diocese": "Stift",
+    "material": "Material",
+    "shape": "Form",
+    "sides": "Sidor",
+    "row_fest": "Radmarkering",
+    "solar": "Solsystem",
+    "completeness": "Fullständighet",
+    "symbols": "Symbolkategorier",
+    "apply": "Tillämpa",
+    "reset": "Återställ",
+    "active": "aktiva filter"
+  },
+
+  "browse": {
+    "title": "Bläddra runstavar",
+    "sort_by": "Sortera efter",
+    "sort_catalog": "A–Ö (katalog)",
+    "sort_period": "Period",
+    "sort_diocese": "Stift",
+    "results_per_page": "Resultat per sida",
+    "page": "Sida",
+    "view_calendar": "Visa kalender",
+    "no_image": "Bild kommer snart"
+  },
+
+  "calendar": {
+    "title": "Runstav",
+    "overview": "Översikt",
+    "feasts": "Högtider",
+    "symbols": "Symboler",
+    "dating": "Datering och kontext",
+    "references": "Referenser och data",
+    "back_to_map": "Tillbaka till kartan",
+    "show_on_map": "Visa på kartan",
+
+    "metadata": {
+      "catalog": "Katalognummer",
+      "institute": "Institution",
+      "location": "Plats",
+      "diocese": "Stift",
+      "socken": "Socken",
+      "material": "Material",
+      "shape": "Form",
+      "sides": "Antal sidor",
+      "dimensions": "Mått",
+      "year": "År",
+      "period": "Period",
+      "solar": "Solsystem",
+      "row_fest": "Radmarkering",
+      "completeness": "Fullständighet",
+      "transcriber": "Transkribent"
+    },
+
+    "feast_table": {
+      "month": "Månad",
+      "day": "Dag",
+      "day_of_year": "Dag på året",
+      "feast_original": "Högtid (original)",
+      "feast_canonical": "Kanonisk högtid",
+      "type": "Typ",
+      "golden_number": "Gyllental",
+      "sunday_letter": "Söndagsbokstav",
+      "rune": "Runa",
+      "feast_mark": "Högtidsmarkering",
+      "notes": "Anteckningar",
+      "filter_month": "Filtrera månad",
+      "filter_type": "Filtrera typ",
+      "search_feasts": "Sök högtider..."
+    },
+
+    "symbol_summary": {
+      "title": "Symbolsammanfattning",
+      "by_type": "Efter typ",
+      "by_category": "Efter kategori",
+      "count": "Antal",
+      "co_occurring": "Vanligaste symbolpar",
+      "complex_days": "Dagar med komplexa markeringar",
+      "writing_samples": "Skriftprover",
+      "show_more": "Visa fler",
+      "show_less": "Visa färre"
+    },
+
+    "dating_info": {
+      "original": "Original datering",
+      "normalized": "Normaliserad tidsperiod",
+      "uncertainty": "Osäkerhet",
+      "period_explanation": "Periodklassificering baserad på mittåret mellan"
+    }
+  },
+
+  "methods": {
+    "title": "Metod och analys",
+    "intro": "Denna sida beskriver de metoder som används för att analysera runstavar.",
+    "phylogeny": {
+      "title": "Fylogenetisk analys",
+      "dendrogram_caption": "Hierarkiskt klusterträd baserat på närvaro/avsaknad av 268 normaliserade högtider på 669 runstavar. Avstånd beräknas i ett PCA-rum (3 komponenter; 27 % varians). Genomsnittslänkage (UPGMA).",
+      "pca_caption": "PCA-projektion av runstavar (tvådimensionella vyer ur tre komponenter). Färger markerar perioder; former markerar stift."
+    }
+  },
+
+  "about": {
+    "title": "Om projektet",
+    "what_are_runestaves": {
+      "title": "Vad är runstavar?",
+      "text": "Runstavar (även kallade primstavar) är medeltida och tidigmoderna kalendrar ristade i trä. De användes för att hålla reda på högtider, helgons dagar och viktig information om årets gång."
+    },
+    "project": {
+      "title": "Om projektet",
+      "text": "Detta projekt digitaliserar och analyserar Sveriges bevarade runstavar, med data från museer och samlingar i hela landet."
+    },
+    "team": "Projektteam",
+    "funding": "Finansiering",
+    "funding_text": "Detta projekt finansieras av Riksbankens Jubileumsfond (RJ).",
+    "affiliation": "Tillhörighet",
+    "affiliation_text": "Uppsala universitet",
+    "acknowledgments": "Tack till",
+    "acknowledgments_text": "Vi tackar alla museer och institutioner som bidragit med data och bilder.",
+    "contact": "Kontakt",
+    "license": "Licens"
+  },
+
+  "data_page": {
+    "title": "Data och citat",
+    "intro": "All data från detta projekt är öppet tillgänglig under CC-BY 4.0-licens.",
+    "zenodo": {
+      "title": "Datauppsättning",
+      "text": "Den fullständiga datauppsättningen finns tillgänglig på Zenodo:"
+    },
+    "github": {
+      "title": "Källkod",
+      "text": "Projektkod och dokumentation finns på GitHub:"
+    },
+    "citation": {
+      "title": "Citera detta arbete",
+      "text": "Om du använder denna data i din forskning, vänligen citera:"
+    },
+    "license_text": "Denna data publiceras under Creative Commons Attribution 4.0 International License (CC-BY 4.0)."
+  },
+
+  "search": {
+    "placeholder": "Sök efter plats, stift, högtider, symboler...",
+    "searching": "Söker...",
+    "results": "Sökresultat",
+    "no_results": "Inga resultat hittades",
+    "found": "Hittade",
+    "matches": "träffar"
+  },
+
+  "months": {
+    "1": "Januari",
+    "2": "Februari",
+    "3": "Mars",
+    "4": "April",
+    "5": "Maj",
+    "6": "Juni",
+    "7": "Juli",
+    "8": "Augusti",
+    "9": "September",
+    "10": "Oktober",
+    "11": "November",
+    "12": "December"
+  },
+
+  "periods": {
+    "medieval": "Medeltid",
+    "16th_century": "1500-talet",
+    "17th_century": "1600-talet",
+    "18th_century": "1700-talet",
+    "19th_century": "1800-talet",
+    "unknown": "Okänt"
+  },
+
+  "symbol_categories": {
+    "religious": "Religiösa symboler",
+    "liturgical": "Liturgiska symboler",
+    "royal": "Kungliga symboler",
+    "agricultural": "Jordbrukssymboler",
+    "tools": "Verktyg",
+    "occupational": "Yrken",
+    "drinking": "Dryck",
+    "animals": "Djur",
+    "human": "Människor",
+    "plants": "Växter",
+    "geometric": "Geometriska former",
+    "natural_phenomena": "Naturfenomen",
+    "text": "Text",
+    "notation": "Notation",
+    "generic": "Generiska markeringar"
+  },
+
+  "footer": {
+    "license": "Licensierad under CC-BY 4.0",
+    "created_by": "Skapad av",
+    "funded_by": "Finansierat av",
+    "museum_acknowledgment": "Med tack till Sveriges museer för deras bidrag"
+  },
+
+  "accessibility": {
+    "skip_to_content": "Hoppa till innehåll",
+    "open_menu": "Öppna meny",
+    "close_menu": "Stäng meny",
+    "loading": "Laddar",
+    "error": "Fel"
+  }
+}

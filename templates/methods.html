@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %}{{ t.methods.title }} – {{ t.site.title }}{% endblock %}
+
+{% block content %}
+<article class="methods-page">
+    <h1>{{ t.methods.title }}</h1>
+
+    <div class="content">
+        {{ content | safe }}
+    </div>
+
+    <section class="phylogeny-section">
+        <h2>{{ t.methods.phylogeny.title }}</h2>
+
+        <figure>
+            <img src="{{ base_url }}/assets/phylogeny_dendrogram.png"
+                 alt="{{ t.methods.phylogeny.title }} - Dendrogram"
+                 loading="lazy">
+            <figcaption>{{ t.methods.phylogeny.dendrogram_caption }}</figcaption>
+        </figure>
+
+        <figure>
+            <img src="{{ base_url }}/assets/phylogeny_pca.png"
+                 alt="{{ t.methods.phylogeny.title }} - PCA"
+                 loading="lazy">
+            <figcaption>{{ t.methods.phylogeny.pca_caption }}</figcaption>
+        </figure>
+    </section>
+</article>
+{% endblock %}

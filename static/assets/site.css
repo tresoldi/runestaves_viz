@@ -1,0 +1,609 @@
+/**
+ * Runestaves - Custom Site Styles
+ *
+ * Heritage-inspired color palette with earthy, historical tones
+ * Built on top of Pico.css for semantic HTML styling
+ */
+
+:root {
+  /* Heritage color palette */
+  --color-parchment: #f5f1e8;
+  --color-aged-paper: #e8dcc4;
+  --color-wood-light: #d4b896;
+  --color-wood-medium: #8b6f47;
+  --color-wood-dark: #5d4a2f;
+  --color-rust: #a0522d;
+  --color-deep-red: #8b1a1a;
+  --color-gold: #c9a227;
+  --color-muted-blue: #4a5f7f;
+  --color-slate: #2c3539;
+
+  /* Semantic color assignments */
+  --primary-color: var(--color-wood-dark);
+  --secondary-color: var(--color-muted-blue);
+  --accent-color: var(--color-gold);
+  --text-color: var(--color-slate);
+  --background-color: var(--color-parchment);
+  --card-background: #ffffff;
+
+  /* Period colors for badges and map markers */
+  --period-medieval: #8b1a1a;
+  --period-16th: #a0522d;
+  --period-17th: #8b6f47;
+  --period-18th: #4a5f7f;
+  --period-19th: #2c5530;
+  --period-unknown: #6b7280;
+
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 250ms ease;
+  --transition-slow: 400ms ease;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Typography refinements */
+body {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary-color);
+}
+
+code {
+  background-color: var(--color-aged-paper);
+  padding: 0.125rem 0.25rem;
+  border-radius: 0.25rem;
+  font-size: 0.9em;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Navigation */
+header nav {
+  background-color: var(--card-background);
+  border-bottom: 2px solid var(--color-wood-medium);
+  padding: var(--spacing-md) 0;
+}
+
+.lang-switch {
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: 0.25rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-right: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+}
+
+.badge-period {
+  background-color: var(--period-17th);
+  color: white;
+}
+
+.badge-diocese {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.badge-location {
+  background-color: var(--color-wood-light);
+  color: var(--text-color);
+}
+
+/* Buttons */
+button,
+.button {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  transition: background-color var(--transition-fast);
+}
+
+button:hover,
+.button:hover {
+  background-color: var(--color-wood-medium);
+}
+
+button.secondary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+/* Map page layout */
+.map-page {
+  padding: 0;
+}
+
+.map-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.map-controls {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: center;
+}
+
+.result-counter {
+  font-size: 0.95rem;
+  color: var(--text-color);
+}
+
+.map-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+  .map-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-sidebar {
+    display: none;
+  }
+
+  .filter-sidebar.active {
+    display: block;
+  }
+}
+
+/* Filter sidebar */
+.filter-sidebar {
+  background-color: var(--card-background);
+  padding: var(--spacing-md);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.filter-sidebar h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.filter-group {
+  margin-bottom: var(--spacing-md);
+}
+
+.filter-group label {
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  font-size: 0.9rem;
+}
+
+.filter-checkboxes label {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.filter-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-lg);
+}
+
+.filter-actions button {
+  flex: 1;
+}
+
+/* Active filters */
+.active-filters {
+  margin-bottom: var(--spacing-md);
+  padding: var(--spacing-md);
+  background-color: var(--color-aged-paper);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.filter-chip {
+  background-color: var(--primary-color);
+  color: white;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.filter-chip button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+/* Map container */
+.map-container {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#map {
+  width: 100%;
+  height: 600px;
+  background-color: var(--color-aged-paper);
+}
+
+.map-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1000;
+}
+
+/* Leaflet popup customization */
+.leaflet-popup-content-wrapper {
+  background-color: var(--card-background);
+  border-radius: 0.5rem;
+}
+
+.leaflet-popup-content h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+/* Browse page */
+.browse-page {
+  padding: 0;
+}
+
+.browse-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.browse-controls {
+  display: flex;
+  gap: var(--spacing-md);
+  align-items: center;
+}
+
+.browse-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+  .browse-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Calendar grid */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.calendar-card {
+  background-color: var(--card-background);
+  border-radius: 0.5rem;
+  padding: var(--spacing-md);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.calendar-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.calendar-card h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.calendar-card .cal-id {
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: var(--secondary-color);
+}
+
+.calendar-card .symbol-hints {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin-top: var(--spacing-sm);
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-xl);
+}
+
+.pagination button {
+  min-width: 2.5rem;
+}
+
+.pagination button.active {
+  background-color: var(--accent-color);
+}
+
+/* Calendar detail page */
+.calendar-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.calendar-header {
+  margin-bottom: var(--spacing-xl);
+}
+
+.calendar-header h1 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.calendar-header .cal-id {
+  font-family: monospace;
+  color: var(--secondary-color);
+}
+
+.calendar-badges {
+  margin-top: var(--spacing-md);
+}
+
+.calendar-image {
+  margin: var(--spacing-xl) 0;
+}
+
+.image-placeholder {
+  background: linear-gradient(135deg, var(--color-aged-paper) 0%, var(--color-wood-light) 100%);
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  color: var(--text-color);
+  font-style: italic;
+}
+
+/* Metadata grid */
+.metadata-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--spacing-sm) var(--spacing-lg);
+  margin: var(--spacing-md) 0;
+}
+
+.metadata-grid dt {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.metadata-grid dd {
+  margin: 0;
+}
+
+/* Feast table */
+.feast-toolbar {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.table-container {
+  overflow-x: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  background-color: var(--card-background);
+}
+
+thead {
+  position: sticky;
+  top: 0;
+  background-color: var(--primary-color);
+  color: white;
+  z-index: 10;
+}
+
+th {
+  padding: var(--spacing-sm);
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: var(--spacing-sm);
+  border-bottom: 1px solid var(--color-aged-paper);
+}
+
+tr:hover {
+  background-color: var(--color-parchment);
+}
+
+/* Symbol grid */
+.symbol-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  margin: var(--spacing-lg) 0;
+}
+
+#symbol-type-chart,
+#symbol-category-chart {
+  background-color: var(--card-background);
+  padding: var(--spacing-md);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-height: 300px;
+}
+
+/* Footer */
+footer {
+  margin-top: var(--spacing-xl);
+  padding-top: var(--spacing-xl);
+  border-top: 2px solid var(--color-wood-medium);
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.footer-logos {
+  display: flex;
+  gap: var(--spacing-lg);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.logo-placeholder {
+  width: 120px;
+  height: 60px;
+  background-color: var(--color-aged-paper);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-wood-medium);
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+/* Content pages */
+article {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+article figure {
+  margin: var(--spacing-xl) 0;
+}
+
+article figcaption {
+  margin-top: var(--spacing-sm);
+  font-size: 0.9rem;
+  color: var(--secondary-color);
+  font-style: italic;
+}
+
+/* Utility classes */
+.lead {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  margin-bottom: var(--spacing-lg);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-sm {
+  margin-top: var(--spacing-sm);
+}
+
+.mt-md {
+  margin-top: var(--spacing-md);
+}
+
+.mt-lg {
+  margin-top: var(--spacing-lg);
+}
+
+.mb-sm {
+  margin-bottom: var(--spacing-sm);
+}
+
+.mb-md {
+  margin-bottom: var(--spacing-md);
+}
+
+.mb-lg {
+  margin-bottom: var(--spacing-lg);
+}

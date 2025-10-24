@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% block title %}{{ t.map.title }} – {{ t.site.title }}{% endblock %}
+
+{% block extra_head %}
+{# Leaflet for map display #}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+{% endblock %}
+
+{% block content %}
+<div class="map-page">
+    <div class="map-header">
+        <h1>{{ t.map.title }}</h1>
+        <div class="map-controls">
+            <button id="toggle-filters" aria-label="{{ t.map.filters }}">
+                ☰ {{ t.map.filters }}
+            </button>
+            <div class="result-counter">
+                <span id="result-count">{{ t.map.showing }} <strong id="visible-count">0</strong> {{ t.map.of }} <strong id="total-count">0</strong> {{ t.map.calendars }}</span>
+            </div>
+        </div>
+    </div>
+
+    {# Active filter chips #}
+    <div id="active-filters" class="active-filters" style="display: none;">
+        <div class="filter-chips" id="filter-chips"></div>
+        <button id="clear-filters" class="secondary">{{ t.map.clear_filters }}</button>
+    </div>
+
+    <div class="map-layout">
+        {# Filter sidebar #}
+        <aside id="filter-sidebar" class="filter-sidebar">
+            <h3>{{ t.filters.title }}</h3>
+
+            <details open>
+                <summary>{{ t.filters.period }}</summary>
+                <div class="filter-group" id="filter-period"></div>
+            </details>
+
+            <details>
+                <summary>{{ t.filters.diocese }}</summary>
+                <div class="filter-group" id="filter-diocese"></div>
+            </details>
+
+            <details>
+                <summary>{{ t.filters.material }}</summary>
+                <div class="filter-group" id="filter-material"></div>
+            </details>
+
+            <details>
+                <summary>{{ t.filters.shape }}</summary>
+                <div class="filter-group" id="filter-shape"></div>
+            </details>
+
+            <details>
+                <summary>{{ t.filters.symbols }}</summary>
+                <div class="filter-group filter-checkboxes" id="filter-symbols"></div>
+            </details>
+
+            <div class="filter-actions">
+                <button id="apply-filters">{{ t.filters.apply }}</button>
+                <button id="reset-filters" class="secondary">{{ t.filters.reset }}</button>
+            </div>
+        </aside>
+
+        {# Map container #}
+        <div class="map-container">
+            <div id="map" style="height: 600px;" aria-label="{{ t.map.title }}"></div>
+            <div id="map-loading" class="map-loading">
+                <p>{{ t.map.loading }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{# Leaflet and plugins #}
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+
+{# Custom map script #}
+<script src="{{ base_url }}/assets/map.js"></script>
+
+{# Initialize map with translations and data #}
+<script>
+    const mapConfig = {
+        lang: '{{ lang }}',
+        baseUrl: '{{ base_url }}',
+        dataUrl: '{{ base_url }}/data/map_markers.geojson',
+        translations: {{ t | tojson }},
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+        initializeMap(mapConfig);
+    });
+</script>
+{% endblock %}

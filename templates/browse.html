@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block title %}{{ t.browse.title }} – {{ t.site.title }}{% endblock %}
+
+{% block content %}
+<div class="browse-page">
+    <div class="browse-header">
+        <h1>{{ t.browse.title }}</h1>
+
+        <div class="browse-controls">
+            <label for="sort-select">{{ t.browse.sort_by }}</label>
+            <select id="sort-select">
+                <option value="catalog">{{ t.browse.sort_catalog }}</option>
+                <option value="period">{{ t.browse.sort_period }}</option>
+                <option value="diocese">{{ t.browse.sort_diocese }}</option>
+            </select>
+
+            <button id="toggle-filters-browse" class="secondary">
+                ☰ {{ t.map.filters }}
+            </button>
+        </div>
+    </div>
+
+    {# Result counter #}
+    <div class="result-counter">
+        <span id="result-count">{{ t.map.showing }} <strong id="visible-count">0</strong> {{ t.map.of }} <strong id="total-count">0</strong> {{ t.map.calendars }}</span>
+    </div>
+
+    {# Active filter chips #}
+    <div id="active-filters" class="active-filters" style="display: none;">
+        <div class="filter-chips" id="filter-chips"></div>
+        <button id="clear-filters" class="secondary">{{ t.map.clear_filters }}</button>
+    </div>
+
+    <div class="browse-layout">
+        {# Filter sidebar (same as map page) #}
+        <aside id="filter-sidebar" class="filter-sidebar" style="display: none;">
+            <h3>{{ t.filters.title }}</h3>
+
+            <details open>
+                <summary>{{ t.filters.period }}</summary>
+                <div class="filter-group" id="filter-period"></div>
+            </details>
+
+            <details>
+                <summary>{{ t.filters.diocese }}</summary>
+                <div class="filter-group" id="filter-diocese"></div>
+            </details>
+
+            <details>
+                <summary>{{ t.filters.material }}</summary>
+                <div class="filter-group" id="filter-material"></div>
+            </details>
+
+            <details>
+                <summary>{{ t.filters.shape }}</summary>
+                <div class="filter-group" id="filter-shape"></div>
+            </details>
+
+            <details>
+                <summary>{{ t.filters.symbols }}</summary>
+                <div class="filter-group filter-checkboxes" id="filter-symbols"></div>
+            </details>
+
+            <div class="filter-actions">
+                <button id="apply-filters">{{ t.filters.apply }}</button>
+                <button id="reset-filters" class="secondary">{{ t.filters.reset }}</button>
+            </div>
+        </aside>
+
+        {# Calendar cards grid #}
+        <div class="calendar-grid-container">
+            <div id="calendar-grid" class="calendar-grid">
+                {# Populated by JavaScript #}
+            </div>
+
+            {# Pagination #}
+            <div id="pagination" class="pagination">
+                {# Populated by JavaScript #}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{# Custom browse script #}
+<script src="{{ base_url }}/assets/browse.js"></script>
+
+{# Initialize browse with translations and data #}
+<script>
+    const browseConfig = {
+        lang: '{{ lang }}',
+        baseUrl: '{{ base_url }}',
+        dataUrl: '{{ base_url }}/data/map_markers.geojson',
+        translations: {{ t | tojson }},
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+        initializeBrowse(browseConfig);
+    });
+</script>
+{% endblock %}

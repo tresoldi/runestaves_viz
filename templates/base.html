@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ t.site.title }}{% endblock %}</title>
+    <meta name="description" content="{{ t.site.description }}">
+
+    {# Pico.css - Minimal semantic CSS framework #}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+    {# Custom site styles #}
+    <link rel="stylesheet" href="{{ base_url }}/assets/site.css">
+
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    {# Skip to content for accessibility #}
+    <a href="#main-content" class="skip-link">{{ t.accessibility.skip_to_content }}</a>
+
+    {# Main navigation #}
+    <header>
+        <nav class="container">
+            <ul>
+                <li><strong><a href="{{ base_url }}/">{{ t.site.title }}</a></strong></li>
+            </ul>
+            <ul>
+                <li><a href="{{ base_url }}/">{{ t.nav.map }}</a></li>
+                <li><a href="{{ base_url }}/{{ 'bladdra' if lang == 'sv' else 'browse' }}/">{{ t.nav.browse }}</a></li>
+                <li><a href="{{ base_url }}/{{ 'metod' if lang == 'sv' else 'methods' }}/">{{ t.nav.methods }}</a></li>
+                <li><a href="{{ base_url }}/{{ 'om' if lang == 'sv' else 'about' }}/">{{ t.nav.about }}</a></li>
+                <li><a href="{{ base_url }}/data/">{{ t.nav.data }}</a></li>
+                <li><a href="{{ lang_switch_url }}" class="lang-switch">{{ t.nav.language_switch }}</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    {# Main content area #}
+    <main id="main-content" class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    {# Footer #}
+    <footer class="container">
+        <hr>
+        <div class="footer-content">
+            <p>
+                <strong>{{ t.site.title }}</strong><br>
+                {{ t.footer.license }}<br>
+                <small>{{ t.site.version }} {{ version }} • {{ t.site.last_updated }} {{ build_date }}</small>
+            </p>
+            <p>
+                {{ t.footer.created_by }} Uppsala University<br>
+                {{ t.footer.funded_by }} Riksbankens Jubileumsfond (RJ)
+            </p>
+            <p class="museum-ack">
+                <small>{{ t.footer.museum_acknowledgment }}</small>
+            </p>
+        </div>
+
+        {# Logo placeholders #}
+        <div class="footer-logos">
+            <div class="logo-placeholder" aria-label="Uppsala University">
+                <!-- Uppsala University logo will be placed here -->
+            </div>
+            <div class="logo-placeholder" aria-label="Riksbankens Jubileumsfond">
+                <!-- RJ logo will be placed here -->
+            </div>
+        </div>
+    </footer>
+
+    {% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}{{ t.data_page.title }} – {{ t.site.title }}{% endblock %}
+
+{% block content %}
+<article class="data-page">
+    <h1>{{ t.data_page.title }}</h1>
+
+    <p class="lead">{{ t.data_page.intro }}</p>
+
+    <section>
+        <h2>{{ t.data_page.zenodo.title }}</h2>
+        <p>{{ t.data_page.zenodo.text }}</p>
+        <p>
+            <a href="{{ zenodo_url }}" target="_blank" rel="noopener">
+                <img src="https://zenodo.org/badge/DOI/{{ zenodo_doi }}.svg" alt="DOI" style="height: 20px;">
+            </a>
+        </p>
+    </section>
+
+    <section>
+        <h2>{{ t.data_page.github.title }}</h2>
+        <p>{{ t.data_page.github.text }}</p>
+        <p>
+            <a href="{{ github_url }}" target="_blank" rel="noopener">
+                {{ github_url }}
+            </a>
+        </p>
+    </section>
+
+    <section>
+        <h2>{{ t.data_page.citation.title }}</h2>
+        <p>{{ t.data_page.citation.text }}</p>
+        <pre><code>{{ citation }}</code></pre>
+    </section>
+
+    <section>
+        <h2>{{ t.about.license }}</h2>
+        <p>{{ t.data_page.license_text }}</p>
+    </section>
+</article>
+{% endblock %}

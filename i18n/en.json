@@ -1,0 +1,241 @@
+{
+  "site": {
+    "title": "Runestaves – A Digital Catalog",
+    "description": "Explore Sweden's runestaves: medieval calendars carved in wood, preserved in museum collections",
+    "language": "English",
+    "language_code": "en",
+    "version": "Version",
+    "last_updated": "Last updated"
+  },
+
+  "nav": {
+    "home": "Home",
+    "map": "Map",
+    "browse": "Browse",
+    "methods": "Methods",
+    "about": "About",
+    "data": "Data",
+    "search": "Search",
+    "language_switch": "Byt till svenska"
+  },
+
+  "map": {
+    "title": "Runestaves on the map",
+    "showing": "Showing",
+    "of": "of",
+    "calendars": "runestaves",
+    "filters": "Filters",
+    "clear_filters": "Clear filters",
+    "no_results": "No runestaves match your filters",
+    "loading": "Loading map...",
+    "cluster_text": "runestaves",
+    "view_details": "View details"
+  },
+
+  "filters": {
+    "period": "Period",
+    "diocese": "Diocese",
+    "material": "Material",
+    "shape": "Shape",
+    "sides": "Sides",
+    "row_fest": "Row marking",
+    "solar": "Solar system",
+    "completeness": "Completeness",
+    "symbols": "Symbol categories",
+    "apply": "Apply",
+    "reset": "Reset",
+    "active": "active filters"
+  },
+
+  "browse": {
+    "title": "Browse runestaves",
+    "sort_by": "Sort by",
+    "sort_catalog": "A–Z (catalog)",
+    "sort_period": "Period",
+    "sort_diocese": "Diocese",
+    "results_per_page": "Results per page",
+    "page": "Page",
+    "view_calendar": "View calendar",
+    "no_image": "Image coming soon"
+  },
+
+  "calendar": {
+    "title": "Runestave",
+    "overview": "Overview",
+    "feasts": "Feasts",
+    "symbols": "Symbols",
+    "dating": "Dating and context",
+    "references": "References and data",
+    "back_to_map": "Back to map",
+    "show_on_map": "Show on map",
+
+    "metadata": {
+      "catalog": "Catalog number",
+      "institute": "Institution",
+      "location": "Location",
+      "diocese": "Diocese",
+      "socken": "Parish",
+      "material": "Material",
+      "shape": "Shape",
+      "sides": "Number of sides",
+      "dimensions": "Dimensions",
+      "year": "Year",
+      "period": "Period",
+      "solar": "Solar system",
+      "row_fest": "Row marking",
+      "completeness": "Completeness",
+      "transcriber": "Transcriber"
+    },
+
+    "feast_table": {
+      "month": "Month",
+      "day": "Day",
+      "day_of_year": "Day of year",
+      "feast_original": "Feast (original)",
+      "feast_canonical": "Canonical feast",
+      "type": "Type",
+      "golden_number": "Golden number",
+      "sunday_letter": "Sunday letter",
+      "rune": "Rune",
+      "feast_mark": "Feast mark",
+      "notes": "Notes",
+      "filter_month": "Filter month",
+      "filter_type": "Filter type",
+      "search_feasts": "Search feasts..."
+    },
+
+    "symbol_summary": {
+      "title": "Symbol summary",
+      "by_type": "By type",
+      "by_category": "By category",
+      "count": "Count",
+      "co_occurring": "Most common symbol pairs",
+      "complex_days": "Days with complex markings",
+      "writing_samples": "Writing samples",
+      "show_more": "Show more",
+      "show_less": "Show less"
+    },
+
+    "dating_info": {
+      "original": "Original dating",
+      "normalized": "Normalized time period",
+      "uncertainty": "Uncertainty",
+      "period_explanation": "Period classification based on midpoint between"
+    }
+  },
+
+  "methods": {
+    "title": "Methods and analysis",
+    "intro": "This page describes the methods used to analyze runestaves.",
+    "phylogeny": {
+      "title": "Phylogenetic analysis",
+      "dendrogram_caption": "Hierarchical clustering tree based on presence/absence of 268 canonical feasts across 669 runestaves. Distances computed in 3-component PCA space (27% variance). Average linkage (UPGMA).",
+      "pca_caption": "PCA projection of runestaves (two-dimensional views from three components). Colors encode periods; shapes encode dioceses."
+    }
+  },
+
+  "about": {
+    "title": "About the project",
+    "what_are_runestaves": {
+      "title": "What are runestaves?",
+      "text": "Runestaves (also called primstaves) are medieval and early modern calendars carved in wood. They were used to keep track of feast days, saints' days, and important information about the year's cycle."
+    },
+    "project": {
+      "title": "About the project",
+      "text": "This project digitizes and analyzes Sweden's preserved runestaves, with data from museums and collections across the country."
+    },
+    "team": "Project team",
+    "funding": "Funding",
+    "funding_text": "This project is funded by the Swedish Foundation for Humanities and Social Sciences (Riksbankens Jubileumsfond, RJ).",
+    "affiliation": "Affiliation",
+    "affiliation_text": "Uppsala University",
+    "acknowledgments": "Acknowledgments",
+    "acknowledgments_text": "We thank all museums and institutions that contributed data and images.",
+    "contact": "Contact",
+    "license": "License"
+  },
+
+  "data_page": {
+    "title": "Data and citation",
+    "intro": "All data from this project is openly available under CC-BY 4.0 license.",
+    "zenodo": {
+      "title": "Dataset",
+      "text": "The complete dataset is available on Zenodo:"
+    },
+    "github": {
+      "title": "Source code",
+      "text": "Project code and documentation are available on GitHub:"
+    },
+    "citation": {
+      "title": "Cite this work",
+      "text": "If you use this data in your research, please cite:"
+    },
+    "license_text": "This data is published under Creative Commons Attribution 4.0 International License (CC-BY 4.0)."
+  },
+
+  "search": {
+    "placeholder": "Search for location, diocese, feasts, symbols...",
+    "searching": "Searching...",
+    "results": "Search results",
+    "no_results": "No results found",
+    "found": "Found",
+    "matches": "matches"
+  },
+
+  "months": {
+    "1": "January",
+    "2": "February",
+    "3": "March",
+    "4": "April",
+    "5": "May",
+    "6": "June",
+    "7": "July",
+    "8": "August",
+    "9": "September",
+    "10": "October",
+    "11": "November",
+    "12": "December"
+  },
+
+  "periods": {
+    "medieval": "Medieval",
+    "16th_century": "16th century",
+    "17th_century": "17th century",
+    "18th_century": "18th century",
+    "19th_century": "19th century",
+    "unknown": "Unknown"
+  },
+
+  "symbol_categories": {
+    "religious": "Religious symbols",
+    "liturgical": "Liturgical symbols",
+    "royal": "Royal symbols",
+    "agricultural": "Agricultural symbols",
+    "tools": "Tools",
+    "occupational": "Occupational",
+    "drinking": "Drinking",
+    "animals": "Animals",
+    "human": "Human figures",
+    "plants": "Plants",
+    "geometric": "Geometric shapes",
+    "natural_phenomena": "Natural phenomena",
+    "text": "Text",
+    "notation": "Notation",
+    "generic": "Generic markings"
+  },
+
+  "footer": {
+    "license": "Licensed under CC-BY 4.0",
+    "created_by": "Created by",
+    "funded_by": "Funded by",
+    "museum_acknowledgment": "With thanks to Sweden's museums for their contributions"
+  },
+
+  "accessibility": {
+    "skip_to_content": "Skip to content",
+    "open_menu": "Open menu",
+    "close_menu": "Close menu",
+    "loading": "Loading",
+    "error": "Error"
+  }
+}
