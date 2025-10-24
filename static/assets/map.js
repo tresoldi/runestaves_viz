@@ -54,64 +54,64 @@
      * Initialize Leaflet map instance
      */
     function initMap() {
-        // TODO: Create map centered on Sweden
-        // const swedenCenter = [62.0, 15.0];
-        // map = L.map('map').setView(swedenCenter, 5);
+        const swedenCenter = [62.0, 15.0];
+        map = L.map('map').setView(swedenCenter, 5);
 
-        // TODO: Add OpenStreetMap tile layer
-        // L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        //     attribution: '© OpenStreetMap contributors',
-        //     maxZoom: 18,
-        // }).addTo(map);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors',
+            maxZoom: 18,
+        }).addTo(map);
 
-        // TODO: Initialize marker cluster group
-        // markerClusterGroup = L.markerClusterGroup({
-        //     showCoverageOnHover: false,
-        //     zoomToBoundsOnClick: true,
-        // });
+        markerClusterGroup = L.markerClusterGroup({
+            showCoverageOnHover: false,
+            zoomToBoundsOnClick: true,
+        });
 
-        // TODO: Add cluster group to map
-        // map.addLayer(markerClusterGroup);
-
-        console.log('TODO: Initialize Leaflet map');
+        map.addLayer(markerClusterGroup);
     }
 
     /**
      * Load GeoJSON marker data from server
      */
     function loadMapData() {
-        // TODO: Fetch map_markers.geojson
-        // fetch(config.dataUrl)
-        //     .then(response => response.json())
-        //     .then(data => {
-        //         allFeatures = data.features;
-        //         filteredFeatures = [...allFeatures];
-        //         renderMarkers(filteredFeatures);
-        //         updateResultCount();
-        //         hideLoadingOverlay();
-        //     })
-        //     .catch(error => {
-        //         console.error('Failed to load map data:', error);
-        //         showErrorMessage();
-        //     });
-
-        console.log('TODO: Load GeoJSON data from:', config.dataUrl);
+        fetch(config.dataUrl)
+            .then(response => response.json())
+            .then(data => {
+                allFeatures = data.features;
+                filteredFeatures = [...allFeatures];
+                renderMarkers(filteredFeatures);
+                updateResultCount();
+                hideLoadingOverlay();
+            })
+            .catch(error => {
+                console.error('Failed to load map data:', error);
+                showErrorMessage();
+            });
     }
 
     /**
      * Render markers on map
      */
     function renderMarkers(features) {
-        // TODO: Clear existing markers
-        // markerClusterGroup.clearLayers();
+        if (!markerClusterGroup) return;
 
-        // TODO: Create Leaflet markers for each feature
-        // features.forEach(feature => {
-        //     const marker = createMarker(feature);
-        //     markerClusterGroup.addLayer(marker);
-        // });
+        markerClusterGroup.clearLayers();
 
-        console.log('TODO: Render', features.length, 'markers');
+        features.forEach(feature => {
+            const coords = feature.geometry.coordinates;
+            const props = feature.properties;
+
+            const marker = L.marker([coords[1], coords[0]]);
+
+            const popupContent = `
+                <strong>${props.catalog || props.cal_id}</strong><br>
+                ${props.location_name || ''}<br>
+                ${props.year || 'Unknown period'}
+            `;
+            marker.bindPopup(popupContent);
+
+            markerClusterGroup.addLayer(marker);
+        });
     }
 
     /**
@@ -289,11 +289,10 @@
      * Update result counter display
      */
     function updateResultCount() {
-        // TODO: Update counter text
-        // document.getElementById('visible-count').textContent = filteredFeatures.length;
-        // document.getElementById('total-count').textContent = allFeatures.length;
-
-        console.log('TODO: Update result count');
+        const visibleCount = document.getElementById('visible-count');
+        const totalCount = document.getElementById('total-count');
+        if (visibleCount) visibleCount.textContent = filteredFeatures.length;
+        if (totalCount) totalCount.textContent = allFeatures.length;
     }
 
     /**
@@ -364,17 +363,18 @@
      * Hide loading overlay
      */
     function hideLoadingOverlay() {
-        // TODO: Hide loading indicator
-        // document.getElementById('map-loading').style.display = 'none';
-
-        console.log('TODO: Hide loading overlay');
+        const loadingEl = document.getElementById('map-loading');
+        if (loadingEl) loadingEl.style.display = 'none';
     }
 
     /**
      * Show error message
      */
     function showErrorMessage() {
-        // TODO: Display user-friendly error
-        console.error('TODO: Show error message');
+        const loadingEl = document.getElementById('map-loading');
+        if (loadingEl) {
+            loadingEl.innerHTML = '<p>Failed to load map data. Please try refreshing the page.</p>';
+        }
+        console.error('Failed to load map data');
     }
 })();
