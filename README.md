@@ -109,50 +109,46 @@ Open http://localhost:8000 in your browser.
 
 ### 5. Deploy to GitHub Pages
 
-#### Automatic Deployment (Recommended)
+Since the data repository (`evotext/runestaves_data`) is private, deployment is done locally and pushed to GitHub Pages.
 
-The repository includes a GitHub Actions workflow that automatically builds and deploys to GitHub Pages on every push to the `master` branch.
+**One-time setup:**
 
-**First-time setup:**
-
-1. **Set up data repository access** (if `evotext/runestaves_data` is private):
-
-   a. Create a Personal Access Token (PAT):
-      - Go to https://github.com/settings/tokens
-      - Click "Generate new token" → "Generate new token (classic)"
-      - Give it a name: "runestaves_viz_deploy"
-      - Select scopes: ✓ `repo` (Full control of private repositories)
-      - Click "Generate token"
-      - **Copy the token immediately** (you won't see it again!)
-
-   b. Add the token as a repository secret:
-      - Go to https://github.com/tresoldi/runestaves_viz/settings/secrets/actions
-      - Click "New repository secret"
-      - Name: `DATA_REPO_PAT`
-      - Value: Paste the token you just created
-      - Click "Add secret"
-
-2. **Enable GitHub Pages:**
+1. **Enable GitHub Pages:**
    - Go to https://github.com/tresoldi/runestaves_viz/settings/pages
    - Under "Build and deployment":
      - **Source**: Select "Deploy from a branch"
      - **Branch**: Select `gh-pages` and `/ (root)`
      - Click **Save**
 
-3. **Trigger deployment:**
-   - Push to the `master` branch (or manually trigger from Actions tab)
-   - Check progress at https://github.com/tresoldi/runestaves_viz/actions
-   - After 2-5 minutes, your site will be live at:
-     `https://tresoldi.github.io/runestaves_viz/`
-
-**Note:** If `evotext/runestaves_data` is public, step 1 is not needed - the workflow will use the default `GITHUB_TOKEN`.
-
-#### Manual Deployment
+**Deploy the site:**
 
 ```bash
-make site-release  # Full build + validation
-make deploy        # Push to gh-pages branch
-git push origin gh-pages  # Push the deployment
+./deploy.sh
+```
+
+This script will:
+1. Clean previous builds
+2. Build the site with the correct base path (`/runestaves_viz`)
+3. Push the built site to the `gh-pages` branch
+4. Your site will be live in 1-2 minutes at: `https://tresoldi.github.io/runestaves_viz/`
+
+**Manual deployment steps:**
+
+If you prefer to run steps manually:
+
+```bash
+# Build site with GitHub Pages base path
+make clean
+BASE_PATH=/runestaves_viz make site-release
+
+# Deploy to gh-pages branch
+cd site
+git init
+git add -A
+git commit -m "Deploy site - $(date -I)"
+git push -f origin master:gh-pages
+cd ..
+rm -rf site/.git
 ```
 
 ## Build System
