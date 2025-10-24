@@ -24,7 +24,6 @@ jobs:
         with:
           repository: evotext/runestaves_data
           path: runestaves_data
-          token: ${{ secrets.DATA_REPO_PAT || secrets.GITHUB_TOKEN }}
         continue-on-error: true
         id: checkout-data
 
