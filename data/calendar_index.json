@@ -1,0 +1,3566 @@
+{
+  "umf1766": {
+    "size_kb": 118.49609375,
+    "external": true
+  },
+  "umf1767": {
+    "size_kb": 119.0419921875,
+    "external": true
+  },
+  "umf1768": {
+    "size_kb": 119.4970703125,
+    "external": true
+  },
+  "umf1769": {
+    "size_kb": 120.625,
+    "external": true
+  },
+  "umf1770": {
+    "size_kb": 121.0537109375,
+    "external": true
+  },
+  "umf1771": {
+    "size_kb": 120.2841796875,
+    "external": true
+  },
+  "umf1772": {
+    "size_kb": 120.0166015625,
+    "external": true
+  },
+  "umf1773": {
+    "size_kb": 119.7333984375,
+    "external": true
+  },
+  "umf1775": {
+    "size_kb": 121.7900390625,
+    "external": true
+  },
+  "umf1776": {
+    "size_kb": 121.8115234375,
+    "external": true
+  },
+  "umf1777": {
+    "size_kb": 122.1015625,
+    "external": true
+  },
+  "umf1778": {
+    "size_kb": 119.201171875,
+    "external": true
+  },
+  "umf1779": {
+    "size_kb": 122.658203125,
+    "external": true
+  },
+  "umf1780": {
+    "size_kb": 120.1435546875,
+    "external": true
+  },
+  "umf1781": {
+    "size_kb": 120.4873046875,
+    "external": true
+  },
+  "umf1782": {
+    "size_kb": 121.8359375,
+    "external": true
+  },
+  "umf1783": {
+    "size_kb": 0.921875,
+    "external": false
+  },
+  "umf1784": {
+    "size_kb": 122.2119140625,
+    "external": true
+  },
+  "umf1785": {
+    "size_kb": 120.2724609375,
+    "external": true
+  },
+  "umf1786": {
+    "size_kb": 120.5791015625,
+    "external": true
+  },
+  "umf1787": {
+    "size_kb": 120.4951171875,
+    "external": true
+  },
+  "umf1788": {
+    "size_kb": 121.791015625,
+    "external": true
+  },
+  "umf1789": {
+    "size_kb": 123.150390625,
+    "external": true
+  },
+  "umf1790": {
+    "size_kb": 121.80078125,
+    "external": true
+  },
+  "umf1791": {
+    "size_kb": 121.4375,
+    "external": true
+  },
+  "umf1792": {
+    "size_kb": 120.08203125,
+    "external": true
+  },
+  "umf1793": {
+    "size_kb": 118.8564453125,
+    "external": true
+  },
+  "umf1794": {
+    "size_kb": 0.947265625,
+    "external": false
+  },
+  "umf1795": {
+    "size_kb": 106.267578125,
+    "external": true
+  },
+  "umf1796": {
+    "size_kb": 120.2265625,
+    "external": true
+  },
+  "umf1797": {
+    "size_kb": 122.048828125,
+    "external": true
+  },
+  "umf1798": {
+    "size_kb": 118.3515625,
+    "external": true
+  },
+  "umf1799": {
+    "size_kb": 119.5126953125,
+    "external": true
+  },
+  "umf1800": {
+    "size_kb": 120.3994140625,
+    "external": true
+  },
+  "umf1801": {
+    "size_kb": 117.8173828125,
+    "external": true
+  },
+  "umf1802": {
+    "size_kb": 120.5087890625,
+    "external": true
+  },
+  "umf1803": {
+    "size_kb": 120.7216796875,
+    "external": true
+  },
+  "umf1804": {
+    "size_kb": 120.4814453125,
+    "external": true
+  },
+  "umf1805": {
+    "size_kb": 118.6015625,
+    "external": true
+  },
+  "umf1806": {
+    "size_kb": 119.5458984375,
+    "external": true
+  },
+  "umf1807": {
+    "size_kb": 120.40234375,
+    "external": true
+  },
+  "umf1808": {
+    "size_kb": 120.8037109375,
+    "external": true
+  },
+  "umf1809": {
+    "size_kb": 119.4072265625,
+    "external": true
+  },
+  "umf1810": {
+    "size_kb": 119.4990234375,
+    "external": true
+  },
+  "umf1811": {
+    "size_kb": 119.6015625,
+    "external": true
+  },
+  "umf1812": {
+    "size_kb": 120.19921875,
+    "external": true
+  },
+  "umf1813": {
+    "size_kb": 118.83203125,
+    "external": true
+  },
+  "umf1814": {
+    "size_kb": 118.240234375,
+    "external": true
+  },
+  "umf1815": {
+    "size_kb": 118.2490234375,
+    "external": true
+  },
+  "umf1816": {
+    "size_kb": 118.1689453125,
+    "external": true
+  },
+  "umf1817": {
+    "size_kb": 116.5810546875,
+    "external": true
+  },
+  "umf1818": {
+    "size_kb": 118.6083984375,
+    "external": true
+  },
+  "umf1819": {
+    "size_kb": 117.853515625,
+    "external": true
+  },
+  "umf1820": {
+    "size_kb": 120.2197265625,
+    "external": true
+  },
+  "umf1821": {
+    "size_kb": 117.880859375,
+    "external": true
+  },
+  "umf1822": {
+    "size_kb": 120.8046875,
+    "external": true
+  },
+  "umf1823": {
+    "size_kb": 117.6455078125,
+    "external": true
+  },
+  "umf1824": {
+    "size_kb": 119.12890625,
+    "external": true
+  },
+  "umf1825": {
+    "size_kb": 119.7705078125,
+    "external": true
+  },
+  "umf1826": {
+    "size_kb": 119.939453125,
+    "external": true
+  },
+  "umf1827": {
+    "size_kb": 119.513671875,
+    "external": true
+  },
+  "umf1828": {
+    "size_kb": 119.5029296875,
+    "external": true
+  },
+  "umf1829": {
+    "size_kb": 120.12109375,
+    "external": true
+  },
+  "umf1830": {
+    "size_kb": 120.71875,
+    "external": true
+  },
+  "umf1831": {
+    "size_kb": 118.4189453125,
+    "external": true
+  },
+  "umf1832": {
+    "size_kb": 119.8427734375,
+    "external": true
+  },
+  "umf1833": {
+    "size_kb": 119.490234375,
+    "external": true
+  },
+  "umf1834": {
+    "size_kb": 120.8701171875,
+    "external": true
+  },
+  "umf1835": {
+    "size_kb": 120.6640625,
+    "external": true
+  },
+  "umf1836": {
+    "size_kb": 120.6728515625,
+    "external": true
+  },
+  "umf1837": {
+    "size_kb": 121.37109375,
+    "external": true
+  },
+  "umf1838": {
+    "size_kb": 0.9150390625,
+    "external": false
+  },
+  "umf1839": {
+    "size_kb": 119.8828125,
+    "external": true
+  },
+  "umf1840": {
+    "size_kb": 118.5966796875,
+    "external": true
+  },
+  "umf1841": {
+    "size_kb": 120.0185546875,
+    "external": true
+  },
+  "umf1842": {
+    "size_kb": 121.078125,
+    "external": true
+  },
+  "umf1843": {
+    "size_kb": 119.1845703125,
+    "external": true
+  },
+  "umf1844": {
+    "size_kb": 121.2216796875,
+    "external": true
+  },
+  "umf1845": {
+    "size_kb": 122.4521484375,
+    "external": true
+  },
+  "umf1846": {
+    "size_kb": 119.888671875,
+    "external": true
+  },
+  "umf1847": {
+    "size_kb": 118.5322265625,
+    "external": true
+  },
+  "umf1848": {
+    "size_kb": 122.181640625,
+    "external": true
+  },
+  "umf1849": {
+    "size_kb": 120.51953125,
+    "external": true
+  },
+  "umf1850": {
+    "size_kb": 120.119140625,
+    "external": true
+  },
+  "umf1851": {
+    "size_kb": 120.3759765625,
+    "external": true
+  },
+  "umf1852": {
+    "size_kb": 120.1875,
+    "external": true
+  },
+  "umf1853": {
+    "size_kb": 120.0810546875,
+    "external": true
+  },
+  "umf1854": {
+    "size_kb": 120.8046875,
+    "external": true
+  },
+  "umf1855": {
+    "size_kb": 121.080078125,
+    "external": true
+  },
+  "umf1856": {
+    "size_kb": 119.2939453125,
+    "external": true
+  },
+  "umf1857": {
+    "size_kb": 121.521484375,
+    "external": true
+  },
+  "umf1858": {
+    "size_kb": 119.1513671875,
+    "external": true
+  },
+  "umf1859": {
+    "size_kb": 120.787109375,
+    "external": true
+  },
+  "umf1860": {
+    "size_kb": 119.0703125,
+    "external": true
+  },
+  "umf1861": {
+    "size_kb": 118.65234375,
+    "external": true
+  },
+  "umf1863": {
+    "size_kb": 120.677734375,
+    "external": true
+  },
+  "umf1864": {
+    "size_kb": 118.7265625,
+    "external": true
+  },
+  "umf1865": {
+    "size_kb": 120.0732421875,
+    "external": true
+  },
+  "umf1866": {
+    "size_kb": 120.431640625,
+    "external": true
+  },
+  "umf1867": {
+    "size_kb": 118.9150390625,
+    "external": true
+  },
+  "umf1868": {
+    "size_kb": 120.755859375,
+    "external": true
+  },
+  "umf1869": {
+    "size_kb": 118.849609375,
+    "external": true
+  },
+  "umf1870": {
+    "size_kb": 120.5576171875,
+    "external": true
+  },
+  "umf1871": {
+    "size_kb": 120.5009765625,
+    "external": true
+  },
+  "umf1872": {
+    "size_kb": 120.1689453125,
+    "external": true
+  },
+  "umf1873": {
+    "size_kb": 120.189453125,
+    "external": true
+  },
+  "umf1874": {
+    "size_kb": 118.078125,
+    "external": true
+  },
+  "umf1875-a": {
+    "size_kb": 61.4208984375,
+    "external": true
+  },
+  "umf1875-b": {
+    "size_kb": 59.7412109375,
+    "external": true
+  },
+  "umf1876": {
+    "size_kb": 0.9501953125,
+    "external": false
+  },
+  "umf1877": {
+    "size_kb": 116.466796875,
+    "external": true
+  },
+  "umf1878": {
+    "size_kb": 121.7333984375,
+    "external": true
+  },
+  "umf1879": {
+    "size_kb": 117.7314453125,
+    "external": true
+  },
+  "umf1880": {
+    "size_kb": 118.5107421875,
+    "external": true
+  },
+  "umf1881": {
+    "size_kb": 118.80859375,
+    "external": true
+  },
+  "umf1882": {
+    "size_kb": 119.7041015625,
+    "external": true
+  },
+  "umf1883": {
+    "size_kb": 119.6962890625,
+    "external": true
+  },
+  "umf1884": {
+    "size_kb": 119.216796875,
+    "external": true
+  },
+  "umf1885": {
+    "size_kb": 117.767578125,
+    "external": true
+  },
+  "umf1886": {
+    "size_kb": 117.9970703125,
+    "external": true
+  },
+  "umf1887": {
+    "size_kb": 119.759765625,
+    "external": true
+  },
+  "umf1888": {
+    "size_kb": 118.146484375,
+    "external": true
+  },
+  "umf1889": {
+    "size_kb": 118.1171875,
+    "external": true
+  },
+  "umf1890": {
+    "size_kb": 119.55078125,
+    "external": true
+  },
+  "umf1891": {
+    "size_kb": 119.2255859375,
+    "external": true
+  },
+  "umf1892": {
+    "size_kb": 118.7490234375,
+    "external": true
+  },
+  "umf1893": {
+    "size_kb": 119.7275390625,
+    "external": true
+  },
+  "umf1894": {
+    "size_kb": 120.0224609375,
+    "external": true
+  },
+  "umf1895": {
+    "size_kb": 119.296875,
+    "external": true
+  },
+  "umf1896": {
+    "size_kb": 120.4658203125,
+    "external": true
+  },
+  "umf1897": {
+    "size_kb": 120.123046875,
+    "external": true
+  },
+  "umf1898": {
+    "size_kb": 121.158203125,
+    "external": true
+  },
+  "umf1899": {
+    "size_kb": 118.173828125,
+    "external": true
+  },
+  "umf1900": {
+    "size_kb": 0.908203125,
+    "external": false
+  },
+  "umf1902": {
+    "size_kb": 118.994140625,
+    "external": true
+  },
+  "umf1903": {
+    "size_kb": 118.791015625,
+    "external": true
+  },
+  "umf1904": {
+    "size_kb": 119.1142578125,
+    "external": true
+  },
+  "umf1905": {
+    "size_kb": 0.8701171875,
+    "external": false
+  },
+  "umf1906": {
+    "size_kb": 120.1455078125,
+    "external": true
+  },
+  "umf1907": {
+    "size_kb": 119.0361328125,
+    "external": true
+  },
+  "umf1908": {
+    "size_kb": 120.2509765625,
+    "external": true
+  },
+  "umf1909": {
+    "size_kb": 120.2998046875,
+    "external": true
+  },
+  "umf1910": {
+    "size_kb": 121.34375,
+    "external": true
+  },
+  "umf1912": {
+    "size_kb": 0.8740234375,
+    "external": false
+  },
+  "umf1921": {
+    "size_kb": 0.8740234375,
+    "external": false
+  },
+  "umf1922": {
+    "size_kb": 120.30859375,
+    "external": true
+  },
+  "umf1931": {
+    "size_kb": 117.9013671875,
+    "external": true
+  },
+  "umf1932": {
+    "size_kb": 120.0029296875,
+    "external": true
+  },
+  "umfb682": {
+    "size_kb": 119.28515625,
+    "external": true
+  },
+  "umfb1005": {
+    "size_kb": 120.7177734375,
+    "external": true
+  },
+  "umfb1006": {
+    "size_kb": 120.1650390625,
+    "external": true
+  },
+  "umfec197": {
+    "size_kb": 120.0439453125,
+    "external": true
+  },
+  "olm1072": {
+    "size_kb": 120.0029296875,
+    "external": true
+  },
+  "olm1073": {
+    "size_kb": 120.763671875,
+    "external": true
+  },
+  "olm1075": {
+    "size_kb": 1.09375,
+    "external": false
+  },
+  "olm1076": {
+    "size_kb": 118.6171875,
+    "external": true
+  },
+  "olm10782": {
+    "size_kb": 121.6533203125,
+    "external": true
+  },
+  "olm10783": {
+    "size_kb": 120.666015625,
+    "external": true
+  },
+  "olm10784": {
+    "size_kb": 121.3544921875,
+    "external": true
+  },
+  "olm11078:5": {
+    "size_kb": 0.982421875,
+    "external": false
+  },
+  "olm11082": {
+    "size_kb": 118.83203125,
+    "external": true
+  },
+  "olml635": {
+    "size_kb": 0.9619140625,
+    "external": false
+  },
+  "vlm245": {
+    "size_kb": 119.5751953125,
+    "external": true
+  },
+  "vlm246": {
+    "size_kb": 119.6015625,
+    "external": true
+  },
+  "vlm247": {
+    "size_kb": 119.7060546875,
+    "external": true
+  },
+  "vlm289": {
+    "size_kb": 121.2978515625,
+    "external": true
+  },
+  "vlm756": {
+    "size_kb": 120.447265625,
+    "external": true
+  },
+  "vlm756a": {
+    "size_kb": 121.421875,
+    "external": true
+  },
+  "vlm756b": {
+    "size_kb": 121.384765625,
+    "external": true
+  },
+  "vlm3204": {
+    "size_kb": 119.2119140625,
+    "external": true
+  },
+  "vm2668": {
+    "size_kb": 118.0810546875,
+    "external": true
+  },
+  "vm2669": {
+    "size_kb": 117.974609375,
+    "external": true
+  },
+  "vm2670": {
+    "size_kb": 118.224609375,
+    "external": true
+  },
+  "vm2671": {
+    "size_kb": 118.4189453125,
+    "external": true
+  },
+  "vm2672": {
+    "size_kb": 118.3681640625,
+    "external": true
+  },
+  "vm3107": {
+    "size_kb": 119.421875,
+    "external": true
+  },
+  "vm3108": {
+    "size_kb": 119.49609375,
+    "external": true
+  },
+  "vm3109": {
+    "size_kb": 0.9580078125,
+    "external": false
+  },
+  "vm3110": {
+    "size_kb": 118.69921875,
+    "external": true
+  },
+  "vm3111": {
+    "size_kb": 121.958984375,
+    "external": true
+  },
+  "vm3112": {
+    "size_kb": 119.5517578125,
+    "external": true
+  },
+  "vm3113": {
+    "size_kb": 118.0537109375,
+    "external": true
+  },
+  "vm3114": {
+    "size_kb": 0.904296875,
+    "external": false
+  },
+  "vm32258": {
+    "size_kb": 0.90625,
+    "external": false
+  },
+  "vm20557": {
+    "size_kb": 120.310546875,
+    "external": true
+  },
+  "vm2198": {
+    "size_kb": 0.94921875,
+    "external": false
+  },
+  "sam1002": {
+    "size_kb": 120.4990234375,
+    "external": true
+  },
+  "sam1003": {
+    "size_kb": 0.927734375,
+    "external": false
+  },
+  "sam1004": {
+    "size_kb": 0.9365234375,
+    "external": false
+  },
+  "sam1005": {
+    "size_kb": 0.9658203125,
+    "external": false
+  },
+  "sam1006": {
+    "size_kb": 0.9140625,
+    "external": false
+  },
+  "sam1007": {
+    "size_kb": 116.2333984375,
+    "external": true
+  },
+  "sam1008": {
+    "size_kb": 119.6142578125,
+    "external": true
+  },
+  "slm7925": {
+    "size_kb": 120.0068359375,
+    "external": true
+  },
+  "slm20364": {
+    "size_kb": 121.1171875,
+    "external": true
+  },
+  "slm20367": {
+    "size_kb": 121.8955078125,
+    "external": true
+  },
+  "slm51009": {
+    "size_kb": 0.953125,
+    "external": false
+  },
+  "slm51010": {
+    "size_kb": 120.3642578125,
+    "external": true
+  },
+  "slm51011": {
+    "size_kb": 0.9462890625,
+    "external": false
+  },
+  "slm51012": {
+    "size_kb": 119.6513671875,
+    "external": true
+  },
+  "nm6454": {
+    "size_kb": 114.1181640625,
+    "external": true
+  },
+  "nm81378": {
+    "size_kb": 120.49609375,
+    "external": true
+  },
+  "nm81621": {
+    "size_kb": 120.2763671875,
+    "external": true
+  },
+  "nm40594": {
+    "size_kb": 119.7236328125,
+    "external": true
+  },
+  "nm64455": {
+    "size_kb": 120.693359375,
+    "external": true
+  },
+  "nm33039": {
+    "size_kb": 120.8994140625,
+    "external": true
+  },
+  "nm178178": {
+    "size_kb": 120.728515625,
+    "external": true
+  },
+  "nm77715": {
+    "size_kb": 122.6923828125,
+    "external": true
+  },
+  "nm43612": {
+    "size_kb": 120.6396484375,
+    "external": true
+  },
+  "nm31145": {
+    "size_kb": 120.0458984375,
+    "external": true
+  },
+  "nm31146": {
+    "size_kb": 120.52734375,
+    "external": true
+  },
+  "nm174921": {
+    "size_kb": 120.8525390625,
+    "external": true
+  },
+  "nm43613": {
+    "size_kb": 117.3388671875,
+    "external": true
+  },
+  "nm46866": {
+    "size_kb": 120.23046875,
+    "external": true
+  },
+  "nm20316": {
+    "size_kb": 120.1396484375,
+    "external": true
+  },
+  "nm14941": {
+    "size_kb": 120.693359375,
+    "external": true
+  },
+  "nm15798": {
+    "size_kb": 118.2880859375,
+    "external": true
+  },
+  "nm14302": {
+    "size_kb": 119.8232421875,
+    "external": true
+  },
+  "nm46867": {
+    "size_kb": 119.7001953125,
+    "external": true
+  },
+  "nm46868": {
+    "size_kb": 120.623046875,
+    "external": true
+  },
+  "nm53155": {
+    "size_kb": 119.4794921875,
+    "external": true
+  },
+  "nm124228": {
+    "size_kb": 120.771484375,
+    "external": true
+  },
+  "nm34513": {
+    "size_kb": 120.572265625,
+    "external": true
+  },
+  "nm20350": {
+    "size_kb": 120.615234375,
+    "external": true
+  },
+  "nm25911": {
+    "size_kb": 120.3759765625,
+    "external": true
+  },
+  "nm25914": {
+    "size_kb": 120.1162109375,
+    "external": true
+  },
+  "nm25913": {
+    "size_kb": 119.5517578125,
+    "external": true
+  },
+  "nm25915": {
+    "size_kb": 119.7529296875,
+    "external": true
+  },
+  "nm25916": {
+    "size_kb": 119.6630859375,
+    "external": true
+  },
+  "nm18937": {
+    "size_kb": 119.736328125,
+    "external": true
+  },
+  "nm21712": {
+    "size_kb": 115.603515625,
+    "external": true
+  },
+  "nm12900": {
+    "size_kb": 120.4990234375,
+    "external": true
+  },
+  "nm25919": {
+    "size_kb": 120.5341796875,
+    "external": true
+  },
+  "nm25921": {
+    "size_kb": 120.462890625,
+    "external": true
+  },
+  "nm26847": {
+    "size_kb": 119.935546875,
+    "external": true
+  },
+  "nm26842": {
+    "size_kb": 118.1259765625,
+    "external": true
+  },
+  "nm26851": {
+    "size_kb": 120.6376953125,
+    "external": true
+  },
+  "nm27172": {
+    "size_kb": 120.2021484375,
+    "external": true
+  },
+  "nm30214": {
+    "size_kb": 119.5732421875,
+    "external": true
+  },
+  "nm9759": {
+    "size_kb": 120.2880859375,
+    "external": true
+  },
+  "nm2429": {
+    "size_kb": 120.0322265625,
+    "external": true
+  },
+  "nm2430": {
+    "size_kb": 119.9580078125,
+    "external": true
+  },
+  "nm6971": {
+    "size_kb": 119.8994140625,
+    "external": true
+  },
+  "nm4752": {
+    "size_kb": 120.912109375,
+    "external": true
+  },
+  "nm6453": {
+    "size_kb": 120.1494140625,
+    "external": true
+  },
+  "nm12684": {
+    "size_kb": 120.8466796875,
+    "external": true
+  },
+  "nm12699": {
+    "size_kb": 121.0947265625,
+    "external": true
+  },
+  "nm12712": {
+    "size_kb": 116.1591796875,
+    "external": true
+  },
+  "nm19106": {
+    "size_kb": 120.7822265625,
+    "external": true
+  },
+  "nm12702": {
+    "size_kb": 120.25,
+    "external": true
+  },
+  "nm30610": {
+    "size_kb": 121.6689453125,
+    "external": true
+  },
+  "nm56966": {
+    "size_kb": 120.2080078125,
+    "external": true
+  },
+  "nm12701": {
+    "size_kb": 119.498046875,
+    "external": true
+  },
+  "nm25917": {
+    "size_kb": 119.5439453125,
+    "external": true
+  },
+  "nm174952a": {
+    "size_kb": 122.158203125,
+    "external": true
+  },
+  "nm174952b": {
+    "size_kb": 123.2451171875,
+    "external": true
+  },
+  "nm124226": {
+    "size_kb": 117.1611328125,
+    "external": true
+  },
+  "nm22787": {
+    "size_kb": 115.4560546875,
+    "external": true
+  },
+  "nm17314": {
+    "size_kb": 118.8955078125,
+    "external": true
+  },
+  "nm12847": {
+    "size_kb": 120.3408203125,
+    "external": true
+  },
+  "nm174987": {
+    "size_kb": 120.564453125,
+    "external": true
+  },
+  "nm82928": {
+    "size_kb": 59.0673828125,
+    "external": true
+  },
+  "nm25922": {
+    "size_kb": 117.26953125,
+    "external": true
+  },
+  "nm43614": {
+    "size_kb": 117.50390625,
+    "external": true
+  },
+  "nm30764": {
+    "size_kb": 121.123046875,
+    "external": true
+  },
+  "nm31945": {
+    "size_kb": 120.1640625,
+    "external": true
+  },
+  "nm37565": {
+    "size_kb": 116.57421875,
+    "external": true
+  },
+  "nm25918": {
+    "size_kb": 119.7744140625,
+    "external": true
+  },
+  "nm13169": {
+    "size_kb": 119.74609375,
+    "external": true
+  },
+  "nm18936": {
+    "size_kb": 120.087890625,
+    "external": true
+  },
+  "nm4753": {
+    "size_kb": 117.1376953125,
+    "external": true
+  },
+  "nm12912": {
+    "size_kb": 120.201171875,
+    "external": true
+  },
+  "nm12700": {
+    "size_kb": 119.8037109375,
+    "external": true
+  },
+  "nm13767": {
+    "size_kb": 119.650390625,
+    "external": true
+  },
+  "mk285": {
+    "size_kb": 117.240234375,
+    "external": true
+  },
+  "nm17309": {
+    "size_kb": 119.3896484375,
+    "external": true
+  },
+  "nm14304": {
+    "size_kb": 120.9873046875,
+    "external": true
+  },
+  "nm29949": {
+    "size_kb": 118.6806640625,
+    "external": true
+  },
+  "nm87237": {
+    "size_kb": 0.98046875,
+    "external": false
+  },
+  "nm104224": {
+    "size_kb": 119.8984375,
+    "external": true
+  },
+  "nm78506": {
+    "size_kb": 116.4716796875,
+    "external": true
+  },
+  "nm5079": {
+    "size_kb": 118.12109375,
+    "external": true
+  },
+  "nm155830": {
+    "size_kb": 120.2158203125,
+    "external": true
+  },
+  "nm198989": {
+    "size_kb": 120.1845703125,
+    "external": true
+  },
+  "nm174998": {
+    "size_kb": 121.515625,
+    "external": true
+  },
+  "nm174997": {
+    "size_kb": 119.48046875,
+    "external": true
+  },
+  "nm174996": {
+    "size_kb": 120.93359375,
+    "external": true
+  },
+  "nm174995": {
+    "size_kb": 127.1875,
+    "external": true
+  },
+  "nm174994": {
+    "size_kb": 120.4912109375,
+    "external": true
+  },
+  "nm174992": {
+    "size_kb": 121.6923828125,
+    "external": true
+  },
+  "nm175001": {
+    "size_kb": 122.615234375,
+    "external": true
+  },
+  "nm174988": {
+    "size_kb": 121.05859375,
+    "external": true
+  },
+  "nm186040": {
+    "size_kb": 120.8076171875,
+    "external": true
+  },
+  "nm175000": {
+    "size_kb": 120.1298828125,
+    "external": true
+  },
+  "nm174971": {
+    "size_kb": 119.9560546875,
+    "external": true
+  },
+  "nm174983": {
+    "size_kb": 120.3173828125,
+    "external": true
+  },
+  "nm174944": {
+    "size_kb": 120.3251953125,
+    "external": true
+  },
+  "nm174978": {
+    "size_kb": 120.724609375,
+    "external": true
+  },
+  "nm174959": {
+    "size_kb": 120.41015625,
+    "external": true
+  },
+  "nm174963": {
+    "size_kb": 120.01953125,
+    "external": true
+  },
+  "nm174967": {
+    "size_kb": 119.2099609375,
+    "external": true
+  },
+  "nm175044": {
+    "size_kb": 119.015625,
+    "external": true
+  },
+  "nm175022": {
+    "size_kb": 119.287109375,
+    "external": true
+  },
+  "nm175034": {
+    "size_kb": 0.8828125,
+    "external": false
+  },
+  "nm175037": {
+    "size_kb": 120.4345703125,
+    "external": true
+  },
+  "nm175036": {
+    "size_kb": 118.1884765625,
+    "external": true
+  },
+  "nm175031": {
+    "size_kb": 120.2470703125,
+    "external": true
+  },
+  "nm175032": {
+    "size_kb": 120.0009765625,
+    "external": true
+  },
+  "nm175045": {
+    "size_kb": 120.685546875,
+    "external": true
+  },
+  "nm175029": {
+    "size_kb": 119.5859375,
+    "external": true
+  },
+  "nm175028": {
+    "size_kb": 120.0712890625,
+    "external": true
+  },
+  "nm45603": {
+    "size_kb": 119.2490234375,
+    "external": true
+  },
+  "nm4968": {
+    "size_kb": 119.6376953125,
+    "external": true
+  },
+  "nm175063": {
+    "size_kb": 119.1884765625,
+    "external": true
+  },
+  "nm101119": {
+    "size_kb": 119.3212890625,
+    "external": true
+  },
+  "nm175040": {
+    "size_kb": 118.5634765625,
+    "external": true
+  },
+  "nm175051": {
+    "size_kb": 118.4326171875,
+    "external": true
+  },
+  "nm175062": {
+    "size_kb": 119.603515625,
+    "external": true
+  },
+  "nm175059": {
+    "size_kb": 118.6943359375,
+    "external": true
+  },
+  "nm45602": {
+    "size_kb": 116.4287109375,
+    "external": true
+  },
+  "nm227799": {
+    "size_kb": 118.6533203125,
+    "external": true
+  },
+  "nm174968": {
+    "size_kb": 120.8759765625,
+    "external": true
+  },
+  "nm124227": {
+    "size_kb": 119.4150390625,
+    "external": true
+  },
+  "nm228534": {
+    "size_kb": 120.7587890625,
+    "external": true
+  },
+  "nm249534": {
+    "size_kb": 118.4306640625,
+    "external": true
+  },
+  "nm185519": {
+    "size_kb": 121.189453125,
+    "external": true
+  },
+  "nm253758": {
+    "size_kb": 119.25,
+    "external": true
+  },
+  "nm6973": {
+    "size_kb": 118.59765625,
+    "external": true
+  },
+  "nm23122": {
+    "size_kb": 118.169921875,
+    "external": true
+  },
+  "nm175043": {
+    "size_kb": 120.8291015625,
+    "external": true
+  },
+  "nm151153": {
+    "size_kb": 118.521484375,
+    "external": true
+  },
+  "nm30215": {
+    "size_kb": 118.9697265625,
+    "external": true
+  },
+  "nm72168": {
+    "size_kb": 118.7685546875,
+    "external": true
+  },
+  "nm15070": {
+    "size_kb": 117.6650390625,
+    "external": true
+  },
+  "nm88171": {
+    "size_kb": 118.8974609375,
+    "external": true
+  },
+  "nm30763": {
+    "size_kb": 118.4365234375,
+    "external": true
+  },
+  "nm87546": {
+    "size_kb": 119.380859375,
+    "external": true
+  },
+  "nm228535": {
+    "size_kb": 118.6787109375,
+    "external": true
+  },
+  "nm53385": {
+    "size_kb": 121.02734375,
+    "external": true
+  },
+  "nm144247": {
+    "size_kb": 119.5576171875,
+    "external": true
+  },
+  "nm58658": {
+    "size_kb": 119.63671875,
+    "external": true
+  },
+  "nm148335": {
+    "size_kb": 121.2724609375,
+    "external": true
+  },
+  "nm51416": {
+    "size_kb": 119.015625,
+    "external": true
+  },
+  "nm138322": {
+    "size_kb": 121.345703125,
+    "external": true
+  },
+  "nm154677": {
+    "size_kb": 0.943359375,
+    "external": false
+  },
+  "nm178176": {
+    "size_kb": 119.9638671875,
+    "external": true
+  },
+  "nm178170": {
+    "size_kb": 117.833984375,
+    "external": true
+  },
+  "nm30765": {
+    "size_kb": 120.220703125,
+    "external": true
+  },
+  "nm175050": {
+    "size_kb": 120.9736328125,
+    "external": true
+  },
+  "nm11730": {
+    "size_kb": 118.6611328125,
+    "external": true
+  },
+  "nm23895": {
+    "size_kb": 117.5439453125,
+    "external": true
+  },
+  "nm80504": {
+    "size_kb": 119.8017578125,
+    "external": true
+  },
+  "nm62805": {
+    "size_kb": 120.5,
+    "external": true
+  },
+  "nm77610": {
+    "size_kb": 118.9677734375,
+    "external": true
+  },
+  "nm46312": {
+    "size_kb": 118.783203125,
+    "external": true
+  },
+  "nm63486": {
+    "size_kb": 119.703125,
+    "external": true
+  },
+  "nm30767": {
+    "size_kb": 119.32421875,
+    "external": true
+  },
+  "nm33522": {
+    "size_kb": 122.2734375,
+    "external": true
+  },
+  "nm30768": {
+    "size_kb": 121.025390625,
+    "external": true
+  },
+  "nm398": {
+    "size_kb": 118.9638671875,
+    "external": true
+  },
+  "nm45601": {
+    "size_kb": 118.064453125,
+    "external": true
+  },
+  "nm4655": {
+    "size_kb": 116.986328125,
+    "external": true
+  },
+  "nm175024": {
+    "size_kb": 120.875,
+    "external": true
+  },
+  "nm19622": {
+    "size_kb": 118.5849609375,
+    "external": true
+  },
+  "nm37527": {
+    "size_kb": 120.677734375,
+    "external": true
+  },
+  "nm174993": {
+    "size_kb": 119.8916015625,
+    "external": true
+  },
+  "nm175005": {
+    "size_kb": 118.9365234375,
+    "external": true
+  },
+  "nm174908": {
+    "size_kb": 121.2451171875,
+    "external": true
+  },
+  "nm175070": {
+    "size_kb": 120.1337890625,
+    "external": true
+  },
+  "nm175066": {
+    "size_kb": 121.53515625,
+    "external": true
+  },
+  "nm175048": {
+    "size_kb": 120.5703125,
+    "external": true
+  },
+  "nm174986": {
+    "size_kb": 118.89453125,
+    "external": true
+  },
+  "nm9758": {
+    "size_kb": 117.87109375,
+    "external": true
+  },
+  "nm6972": {
+    "size_kb": 119.978515625,
+    "external": true
+  },
+  "nm174917": {
+    "size_kb": 0.9501953125,
+    "external": false
+  },
+  "nm174925": {
+    "size_kb": 0.9169921875,
+    "external": false
+  },
+  "nm174924": {
+    "size_kb": 1.04296875,
+    "external": false
+  },
+  "nm174911": {
+    "size_kb": 1.099609375,
+    "external": false
+  },
+  "nm174906": {
+    "size_kb": 120.404296875,
+    "external": true
+  },
+  "nm174903": {
+    "size_kb": 0.94140625,
+    "external": false
+  },
+  "nm174943": {
+    "size_kb": 0.91015625,
+    "external": false
+  },
+  "nm174932": {
+    "size_kb": 0.9208984375,
+    "external": false
+  },
+  "nm174907": {
+    "size_kb": 1.0517578125,
+    "external": false
+  },
+  "nm175002": {
+    "size_kb": 1.0634765625,
+    "external": false
+  },
+  "nm174912": {
+    "size_kb": 1.119140625,
+    "external": false
+  },
+  "nm174940": {
+    "size_kb": 119.5224609375,
+    "external": true
+  },
+  "nm175072": {
+    "size_kb": 0.9384765625,
+    "external": false
+  },
+  "nm175018": {
+    "size_kb": 0.9228515625,
+    "external": false
+  },
+  "nm175076": {
+    "size_kb": 119.51171875,
+    "external": true
+  },
+  "nm174946": {
+    "size_kb": 0.9091796875,
+    "external": false
+  },
+  "nm174956": {
+    "size_kb": 0.9169921875,
+    "external": false
+  },
+  "nm174958": {
+    "size_kb": 0.8984375,
+    "external": false
+  },
+  "nm174945": {
+    "size_kb": 0.9208984375,
+    "external": false
+  },
+  "nm174962": {
+    "size_kb": 0.9091796875,
+    "external": false
+  },
+  "nm30611": {
+    "size_kb": 121.8037109375,
+    "external": true
+  },
+  "nmokand": {
+    "size_kb": 121.1298828125,
+    "external": true
+  },
+  "nmutannr": {
+    "size_kb": 118.5537109375,
+    "external": true
+  },
+  "nm174894": {
+    "size_kb": 118.828125,
+    "external": true
+  },
+  "nm174926": {
+    "size_kb": 120.3935546875,
+    "external": true
+  },
+  "nm175035": {
+    "size_kb": 117.9287109375,
+    "external": true
+  },
+  "nm175030": {
+    "size_kb": 119.7119140625,
+    "external": true
+  },
+  "nm13779": {
+    "size_kb": 1.08984375,
+    "external": false
+  },
+  "nm174920": {
+    "size_kb": 119.302734375,
+    "external": true
+  },
+  "nm175015": {
+    "size_kb": 121.19921875,
+    "external": true
+  },
+  "nm174928": {
+    "size_kb": 120.6845703125,
+    "external": true
+  },
+  "nm175017": {
+    "size_kb": 120.544921875,
+    "external": true
+  },
+  "nm175013": {
+    "size_kb": 119.7509765625,
+    "external": true
+  },
+  "nm198990": {
+    "size_kb": 119.9873046875,
+    "external": true
+  },
+  "nm175009": {
+    "size_kb": 119.748046875,
+    "external": true
+  },
+  "nm174936": {
+    "size_kb": 120.6513671875,
+    "external": true
+  },
+  "nm175021": {
+    "size_kb": 120.6728515625,
+    "external": true
+  },
+  "nm175027": {
+    "size_kb": 122.30078125,
+    "external": true
+  },
+  "nm175023": {
+    "size_kb": 121.1025390625,
+    "external": true
+  },
+  "nm89931": {
+    "size_kb": 119.09375,
+    "external": true
+  },
+  "nm174970": {
+    "size_kb": 121.9443359375,
+    "external": true
+  },
+  "nm174957": {
+    "size_kb": 120.869140625,
+    "external": true
+  },
+  "nm25920": {
+    "size_kb": 120.638671875,
+    "external": true
+  },
+  "nm26072": {
+    "size_kb": 119.9697265625,
+    "external": true
+  },
+  "nm89901a": {
+    "size_kb": 119.6396484375,
+    "external": true
+  },
+  "nm89901b": {
+    "size_kb": 114.7880859375,
+    "external": true
+  },
+  "nm174942": {
+    "size_kb": 120.56640625,
+    "external": true
+  },
+  "nm174969": {
+    "size_kb": 121.0185546875,
+    "external": true
+  },
+  "gammelsvenskby1827": {
+    "size_kb": 122.958984375,
+    "external": true
+  },
+  "lmg8751": {
+    "size_kb": 121.107421875,
+    "external": true
+  },
+  "lmgl67": {
+    "size_kb": 117.9150390625,
+    "external": true
+  },
+  "lmg6206": {
+    "size_kb": 120.3017578125,
+    "external": true
+  },
+  "lmg265": {
+    "size_kb": 117.8349609375,
+    "external": true
+  },
+  "lmg219": {
+    "size_kb": 118.94140625,
+    "external": true
+  },
+  "lmg318": {
+    "size_kb": 118.94140625,
+    "external": true
+  },
+  "jlm198": {
+    "size_kb": 118.1064453125,
+    "external": true
+  },
+  "jlm1062": {
+    "size_kb": 118.34375,
+    "external": true
+  },
+  "jlm1061": {
+    "size_kb": 119.6337890625,
+    "external": true
+  },
+  "jlm1064": {
+    "size_kb": 118.9072265625,
+    "external": true
+  },
+  "jlm1828": {
+    "size_kb": 117.107421875,
+    "external": true
+  },
+  "jlm2227": {
+    "size_kb": 121.5556640625,
+    "external": true
+  },
+  "jlm1063": {
+    "size_kb": 121.2470703125,
+    "external": true
+  },
+  "jlm1060": {
+    "size_kb": 0.9169921875,
+    "external": false
+  },
+  "m136": {
+    "size_kb": 117.60546875,
+    "external": true
+  },
+  "m137": {
+    "size_kb": 118.810546875,
+    "external": true
+  },
+  "m138": {
+    "size_kb": 117.2705078125,
+    "external": true
+  },
+  "m139": {
+    "size_kb": 119.76171875,
+    "external": true
+  },
+  "m15808": {
+    "size_kb": 117.708984375,
+    "external": true
+  },
+  "m6697": {
+    "size_kb": 119.4013671875,
+    "external": true
+  },
+  "m12314": {
+    "size_kb": 117.828125,
+    "external": true
+  },
+  "vm23115": {
+    "size_kb": 115.806640625,
+    "external": true
+  },
+  "vm23116": {
+    "size_kb": 115.955078125,
+    "external": true
+  },
+  "blm222": {
+    "size_kb": 119.2509765625,
+    "external": true
+  },
+  "blm221": {
+    "size_kb": 118.2802734375,
+    "external": true
+  },
+  "blm11396": {
+    "size_kb": 116.6025390625,
+    "external": true
+  },
+  "blm3566": {
+    "size_kb": 0.974609375,
+    "external": false
+  },
+  "blm852": {
+    "size_kb": 0.9521484375,
+    "external": false
+  },
+  "blm853": {
+    "size_kb": 0.9521484375,
+    "external": false
+  },
+  "blm9864": {
+    "size_kb": 0.9892578125,
+    "external": false
+  },
+  "nm174916": {
+    "size_kb": 122.6357421875,
+    "external": true
+  },
+  "nm174991": {
+    "size_kb": 123.09765625,
+    "external": true
+  },
+  "nm174898": {
+    "size_kb": 121.044921875,
+    "external": true
+  },
+  "nm174990": {
+    "size_kb": 120.5927734375,
+    "external": true
+  },
+  "nm174989": {
+    "size_kb": 119.6962890625,
+    "external": true
+  },
+  "nm3228": {
+    "size_kb": 118.9521484375,
+    "external": true
+  },
+  "nm28816": {
+    "size_kb": 119.4462890625,
+    "external": true
+  },
+  "nm175004": {
+    "size_kb": 118.72265625,
+    "external": true
+  },
+  "nm174999": {
+    "size_kb": 121.26171875,
+    "external": true
+  },
+  "nm174915": {
+    "size_kb": 120.4501953125,
+    "external": true
+  },
+  "nm175003": {
+    "size_kb": 118.8662109375,
+    "external": true
+  },
+  "nm228533": {
+    "size_kb": 1.03515625,
+    "external": false
+  },
+  "nm228536": {
+    "size_kb": 1.087890625,
+    "external": false
+  },
+  "nm91672": {
+    "size_kb": 0.91796875,
+    "external": false
+  },
+  "nm187548": {
+    "size_kb": 121.1416015625,
+    "external": true
+  },
+  "nm174889": {
+    "size_kb": 121.966796875,
+    "external": true
+  },
+  "nm174891": {
+    "size_kb": 121.9638671875,
+    "external": true
+  },
+  "nm174890": {
+    "size_kb": 120.666015625,
+    "external": true
+  },
+  "nm25371": {
+    "size_kb": 121.8173828125,
+    "external": true
+  },
+  "nm174887": {
+    "size_kb": 120.3583984375,
+    "external": true
+  },
+  "nm124225": {
+    "size_kb": 121.9521484375,
+    "external": true
+  },
+  "nm175061": {
+    "size_kb": 121.126953125,
+    "external": true
+  },
+  "nm174919": {
+    "size_kb": 120.615234375,
+    "external": true
+  },
+  "nm174893": {
+    "size_kb": 120.0,
+    "external": true
+  },
+  "nm4263": {
+    "size_kb": 120.0908203125,
+    "external": true
+  },
+  "rhezelius": {
+    "size_kb": 125.1142578125,
+    "external": true
+  },
+  "bureus1599": {
+    "size_kb": 120.4697265625,
+    "external": true
+  },
+  "nm174892": {
+    "size_kb": 120.7177734375,
+    "external": true
+  },
+  "nm174888": {
+    "size_kb": 121.0107421875,
+    "external": true
+  },
+  "nm49923": {
+    "size_kb": 120.53515625,
+    "external": true
+  },
+  "nm4602": {
+    "size_kb": 119.5341796875,
+    "external": true
+  },
+  "nm174947": {
+    "size_kb": 117.88671875,
+    "external": true
+  },
+  "nm174951": {
+    "size_kb": 121.6826171875,
+    "external": true
+  },
+  "nm174953": {
+    "size_kb": 121.3076171875,
+    "external": true
+  },
+  "nm174950": {
+    "size_kb": 120.9697265625,
+    "external": true
+  },
+  "nm174964": {
+    "size_kb": 120.759765625,
+    "external": true
+  },
+  "nm174948": {
+    "size_kb": 122.0888671875,
+    "external": true
+  },
+  "nm174949": {
+    "size_kb": 121.314453125,
+    "external": true
+  },
+  "nm174961": {
+    "size_kb": 122.3388671875,
+    "external": true
+  },
+  "nm174974": {
+    "size_kb": 121.3564453125,
+    "external": true
+  },
+  "nm174977": {
+    "size_kb": 119.3798828125,
+    "external": true
+  },
+  "nm174981": {
+    "size_kb": 122.9306640625,
+    "external": true
+  },
+  "nm174966": {
+    "size_kb": 121.349609375,
+    "external": true
+  },
+  "nm174975": {
+    "size_kb": 121.322265625,
+    "external": true
+  },
+  "nm174976": {
+    "size_kb": 120.8994140625,
+    "external": true
+  },
+  "nm174954": {
+    "size_kb": 121.5126953125,
+    "external": true
+  },
+  "nm174973": {
+    "size_kb": 119.62109375,
+    "external": true
+  },
+  "nm174980": {
+    "size_kb": 121.9267578125,
+    "external": true
+  },
+  "nm175041": {
+    "size_kb": 121.3740234375,
+    "external": true
+  },
+  "nm175014": {
+    "size_kb": 120.3134765625,
+    "external": true
+  },
+  "nm15087": {
+    "size_kb": 119.392578125,
+    "external": true
+  },
+  "nm49924": {
+    "size_kb": 120.1416015625,
+    "external": true
+  },
+  "nm20315": {
+    "size_kb": 118.775390625,
+    "external": true
+  },
+  "nm174982": {
+    "size_kb": 121.2685546875,
+    "external": true
+  },
+  "nm174941": {
+    "size_kb": 120.046875,
+    "external": true
+  },
+  "nm175058": {
+    "size_kb": 120.837890625,
+    "external": true
+  },
+  "nm151154": {
+    "size_kb": 123.083984375,
+    "external": true
+  },
+  "nm625": {
+    "size_kb": 119.6591796875,
+    "external": true
+  },
+  "nm41245": {
+    "size_kb": 121.0634765625,
+    "external": true
+  },
+  "nm33940": {
+    "size_kb": 121.3486328125,
+    "external": true
+  },
+  "nm41243": {
+    "size_kb": 121.0771484375,
+    "external": true
+  },
+  "nm42204": {
+    "size_kb": 120.6259765625,
+    "external": true
+  },
+  "nm175067": {
+    "size_kb": 120.8662109375,
+    "external": true
+  },
+  "nm175068": {
+    "size_kb": 121.5341796875,
+    "external": true
+  },
+  "nm175054": {
+    "size_kb": 121.4453125,
+    "external": true
+  },
+  "nm174931": {
+    "size_kb": 120.5908203125,
+    "external": true
+  },
+  "nm42309": {
+    "size_kb": 120.6611328125,
+    "external": true
+  },
+  "nm175046": {
+    "size_kb": 120.6865234375,
+    "external": true
+  },
+  "nm62339": {
+    "size_kb": 119.7978515625,
+    "external": true
+  },
+  "nm175053": {
+    "size_kb": 120.9013671875,
+    "external": true
+  },
+  "nnsundborn": {
+    "size_kb": 120.87890625,
+    "external": true
+  },
+  "nm61576": {
+    "size_kb": 119.3759765625,
+    "external": true
+  },
+  "nm174938": {
+    "size_kb": 119.3994140625,
+    "external": true
+  },
+  "nm174960": {
+    "size_kb": 122.072265625,
+    "external": true
+  },
+  "nm175069": {
+    "size_kb": 120.0810546875,
+    "external": true
+  },
+  "nm73665": {
+    "size_kb": 120.830078125,
+    "external": true
+  },
+  "nm174904": {
+    "size_kb": 0.9052734375,
+    "external": false
+  },
+  "nm40985": {
+    "size_kb": 120.001953125,
+    "external": true
+  },
+  "nm41244": {
+    "size_kb": 120.982421875,
+    "external": true
+  },
+  "nm174955": {
+    "size_kb": 120.98828125,
+    "external": true
+  },
+  "nm48598": {
+    "size_kb": 119.7587890625,
+    "external": true
+  },
+  "nm3855": {
+    "size_kb": 121.08984375,
+    "external": true
+  },
+  "nm175049": {
+    "size_kb": 121.583984375,
+    "external": true
+  },
+  "nm205447": {
+    "size_kb": 121.1953125,
+    "external": true
+  },
+  "nm174935": {
+    "size_kb": 120.953125,
+    "external": true
+  },
+  "nm175033": {
+    "size_kb": 121.13671875,
+    "external": true
+  },
+  "nm175056": {
+    "size_kb": 118.3837890625,
+    "external": true
+  },
+  "nm174972": {
+    "size_kb": 119.82421875,
+    "external": true
+  },
+  "im1610992": {
+    "size_kb": 1.0,
+    "external": false
+  },
+  "im163038": {
+    "size_kb": 120.853515625,
+    "external": true
+  },
+  "im163039": {
+    "size_kb": 121.568359375,
+    "external": true
+  },
+  "im163040": {
+    "size_kb": 121.54296875,
+    "external": true
+  },
+  "im163041": {
+    "size_kb": 122.0908203125,
+    "external": true
+  },
+  "im163042": {
+    "size_kb": 121.23046875,
+    "external": true
+  },
+  "im163044": {
+    "size_kb": 0.900390625,
+    "external": false
+  },
+  "im163045": {
+    "size_kb": 0.8935546875,
+    "external": false
+  },
+  "im163046": {
+    "size_kb": 0.8837890625,
+    "external": false
+  },
+  "im163047": {
+    "size_kb": 0.8837890625,
+    "external": false
+  },
+  "im163048": {
+    "size_kb": 0.9443359375,
+    "external": false
+  },
+  "im163050": {
+    "size_kb": 0.8837890625,
+    "external": false
+  },
+  "im163051": {
+    "size_kb": 0.90234375,
+    "external": false
+  },
+  "im163052": {
+    "size_kb": 0.8837890625,
+    "external": false
+  },
+  "im163053": {
+    "size_kb": 0.8837890625,
+    "external": false
+  },
+  "im163054": {
+    "size_kb": 0.8837890625,
+    "external": false
+  },
+  "im163055": {
+    "size_kb": 120.4296875,
+    "external": true
+  },
+  "im167797": {
+    "size_kb": 119.421875,
+    "external": true
+  },
+  "im168089": {
+    "size_kb": 0.8837890625,
+    "external": false
+  },
+  "sa10047": {
+    "size_kb": 121.990234375,
+    "external": true
+  },
+  "gm203": {
+    "size_kb": 0.8955078125,
+    "external": false
+  },
+  "gm204": {
+    "size_kb": 0.876953125,
+    "external": false
+  },
+  "gm205": {
+    "size_kb": 0.876953125,
+    "external": false
+  },
+  "gm281": {
+    "size_kb": 1.060546875,
+    "external": false
+  },
+  "gm330": {
+    "size_kb": 0.8955078125,
+    "external": false
+  },
+  "gm344": {
+    "size_kb": 0.9189453125,
+    "external": false
+  },
+  "gm448": {
+    "size_kb": 0.876953125,
+    "external": false
+  },
+  "gm502": {
+    "size_kb": 0.876953125,
+    "external": false
+  },
+  "gm1150": {
+    "size_kb": 0.8974609375,
+    "external": false
+  },
+  "gm1151": {
+    "size_kb": 0.8837890625,
+    "external": false
+  },
+  "gm1152": {
+    "size_kb": 0.8974609375,
+    "external": false
+  },
+  "gm1153": {
+    "size_kb": 0.8974609375,
+    "external": false
+  },
+  "gm1154": {
+    "size_kb": 0.8974609375,
+    "external": false
+  },
+  "gm1155": {
+    "size_kb": 119.6259765625,
+    "external": true
+  },
+  "gm1156": {
+    "size_kb": 117.7255859375,
+    "external": true
+  },
+  "gm1157": {
+    "size_kb": 0.87890625,
+    "external": false
+  },
+  "gm1158": {
+    "size_kb": 0.87890625,
+    "external": false
+  },
+  "gm1159": {
+    "size_kb": 119.6455078125,
+    "external": true
+  },
+  "gm1160": {
+    "size_kb": 120.5380859375,
+    "external": true
+  },
+  "gm1302": {
+    "size_kb": 0.87890625,
+    "external": false
+  },
+  "gm1593": {
+    "size_kb": 0.87890625,
+    "external": false
+  },
+  "gm2101": {
+    "size_kb": 0.8974609375,
+    "external": false
+  },
+  "gm2890": {
+    "size_kb": 0.8974609375,
+    "external": false
+  },
+  "gm2920": {
+    "size_kb": 121.515625,
+    "external": true
+  },
+  "gm2921": {
+    "size_kb": 118.93359375,
+    "external": true
+  },
+  "gm2922": {
+    "size_kb": 119.3642578125,
+    "external": true
+  },
+  "gm2923": {
+    "size_kb": 0.9150390625,
+    "external": false
+  },
+  "gm2925": {
+    "size_kb": 121.150390625,
+    "external": true
+  },
+  "gm2926": {
+    "size_kb": 119.8291015625,
+    "external": true
+  },
+  "gm9700": {
+    "size_kb": 120.384765625,
+    "external": true
+  },
+  "gm11024": {
+    "size_kb": 0.9013671875,
+    "external": false
+  },
+  "gm11278": {
+    "size_kb": 0.9013671875,
+    "external": false
+  },
+  "gm14318": {
+    "size_kb": 0.919921875,
+    "external": false
+  },
+  "gm18615": {
+    "size_kb": 0.9375,
+    "external": false
+  },
+  "lmgl197": {
+    "size_kb": 121.17578125,
+    "external": true
+  },
+  "lmg6205": {
+    "size_kb": 0.962890625,
+    "external": false
+  },
+  "km1888": {
+    "size_kb": 121.1845703125,
+    "external": true
+  },
+  "km6202": {
+    "size_kb": 125.03125,
+    "external": true
+  },
+  "km6204": {
+    "size_kb": 119.7060546875,
+    "external": true
+  },
+  "km6503": {
+    "size_kb": 0.9638671875,
+    "external": false
+  },
+  "km7029": {
+    "size_kb": 119.9052734375,
+    "external": true
+  },
+  "km7536": {
+    "size_kb": 118.517578125,
+    "external": true
+  },
+  "km7576": {
+    "size_kb": 0.9208984375,
+    "external": false
+  },
+  "km10730": {
+    "size_kb": 121.5458984375,
+    "external": true
+  },
+  "km1110": {
+    "size_kb": 0.90625,
+    "external": false
+  },
+  "km12637": {
+    "size_kb": 0.9541015625,
+    "external": false
+  },
+  "km12864": {
+    "size_kb": 0.9619140625,
+    "external": false
+  },
+  "km13771": {
+    "size_kb": 120.37109375,
+    "external": true
+  },
+  "km13772": {
+    "size_kb": 0.9482421875,
+    "external": false
+  },
+  "km15576": {
+    "size_kb": 118.4736328125,
+    "external": true
+  },
+  "km15577": {
+    "size_kb": 120.2783203125,
+    "external": true
+  },
+  "km16583": {
+    "size_kb": 115.3310546875,
+    "external": true
+  },
+  "km17293": {
+    "size_kb": 0.96875,
+    "external": false
+  },
+  "km25837": {
+    "size_kb": 0.9638671875,
+    "external": false
+  },
+  "km26318": {
+    "size_kb": 119.2587890625,
+    "external": true
+  },
+  "km32780": {
+    "size_kb": 125.6572265625,
+    "external": true
+  },
+  "km32781": {
+    "size_kb": 0.9638671875,
+    "external": false
+  },
+  "km32782": {
+    "size_kb": 0.9375,
+    "external": false
+  },
+  "km38444": {
+    "size_kb": 0.998046875,
+    "external": false
+  },
+  "km41000582": {
+    "size_kb": 0.9755859375,
+    "external": false
+  },
+  "sko11713": {
+    "size_kb": 0.9375,
+    "external": false
+  },
+  "sko11714": {
+    "size_kb": 118.7255859375,
+    "external": true
+  },
+  "sko11715": {
+    "size_kb": 0.9296875,
+    "external": false
+  },
+  "sko11716": {
+    "size_kb": 0.93359375,
+    "external": false
+  },
+  "sko11717": {
+    "size_kb": 0.927734375,
+    "external": false
+  },
+  "sko11718": {
+    "size_kb": 120.9072265625,
+    "external": true
+  },
+  "sko11719": {
+    "size_kb": 119.1103515625,
+    "external": true
+  },
+  "sko11720": {
+    "size_kb": 119.78125,
+    "external": true
+  },
+  "sko11721": {
+    "size_kb": 119.486328125,
+    "external": true
+  },
+  "sko11722": {
+    "size_kb": 120.615234375,
+    "external": true
+  },
+  "sko11723": {
+    "size_kb": 120.3125,
+    "external": true
+  },
+  "sko11724": {
+    "size_kb": 0.94140625,
+    "external": false
+  },
+  "sko11726": {
+    "size_kb": 119.38671875,
+    "external": true
+  },
+  "sko11727-b": {
+    "size_kb": 121.599609375,
+    "external": true
+  },
+  "sko11728": {
+    "size_kb": 126.98828125,
+    "external": true
+  },
+  "sko12359": {
+    "size_kb": 0.9189453125,
+    "external": false
+  },
+  "sko7324": {
+    "size_kb": 120.7197265625,
+    "external": true
+  },
+  "jml6": {
+    "size_kb": 0.947265625,
+    "external": false
+  },
+  "jml64": {
+    "size_kb": 0.98046875,
+    "external": false
+  },
+  "jml101": {
+    "size_kb": 119.548828125,
+    "external": true
+  },
+  "jml111": {
+    "size_kb": 0.94140625,
+    "external": false
+  },
+  "jml154": {
+    "size_kb": 120.41015625,
+    "external": true
+  },
+  "jml155": {
+    "size_kb": 121.2109375,
+    "external": true
+  },
+  "jml161": {
+    "size_kb": 118.3701171875,
+    "external": true
+  },
+  "jml163": {
+    "size_kb": 120.1142578125,
+    "external": true
+  },
+  "ISSUE01": {
+    "size_kb": 1.1025390625,
+    "external": false
+  },
+  "jmm3147": {
+    "size_kb": 120.138671875,
+    "external": true
+  },
+  "jml80": {
+    "size_kb": 0.9990234375,
+    "external": false
+  },
+  "jml81": {
+    "size_kb": 118.931640625,
+    "external": true
+  },
+  "jml82": {
+    "size_kb": 0.89453125,
+    "external": false
+  },
+  "jml90": {
+    "size_kb": 116.1611328125,
+    "external": true
+  },
+  "jml91": {
+    "size_kb": 0.91015625,
+    "external": false
+  },
+  "jml310": {
+    "size_kb": 0.966796875,
+    "external": false
+  },
+  "jml968": {
+    "size_kb": 121.279296875,
+    "external": true
+  },
+  "jmm978": {
+    "size_kb": 0.9482421875,
+    "external": false
+  },
+  "jmm538": {
+    "size_kb": 120.853515625,
+    "external": true
+  },
+  "jmm539": {
+    "size_kb": 119.4775390625,
+    "external": true
+  },
+  "jml702": {
+    "size_kb": 0.9638671875,
+    "external": false
+  },
+  "jml944": {
+    "size_kb": 116.23046875,
+    "external": true
+  },
+  "jml1027": {
+    "size_kb": 0.982421875,
+    "external": false
+  },
+  "jml1095": {
+    "size_kb": 0.9775390625,
+    "external": false
+  },
+  "jml1571": {
+    "size_kb": 0.9921875,
+    "external": false
+  },
+  "jml1577": {
+    "size_kb": 0.9765625,
+    "external": false
+  },
+  "jml1638": {
+    "size_kb": 0.9609375,
+    "external": false
+  },
+  "jml3973": {
+    "size_kb": 0.9599609375,
+    "external": false
+  },
+  "nm14911": {
+    "size_kb": 120.943359375,
+    "external": true
+  },
+  "nm41264": {
+    "size_kb": 121.9853515625,
+    "external": true
+  },
+  "klm1648": {
+    "size_kb": 0.974609375,
+    "external": false
+  },
+  "klm1649": {
+    "size_kb": 0.9521484375,
+    "external": false
+  },
+  "klm1650": {
+    "size_kb": 117.2373046875,
+    "external": true
+  },
+  "klm1651": {
+    "size_kb": 119.3486328125,
+    "external": true
+  },
+  "klm1652": {
+    "size_kb": 120.146484375,
+    "external": true
+  },
+  "klm1653": {
+    "size_kb": 0.9755859375,
+    "external": false
+  },
+  "klm2030": {
+    "size_kb": 1.1025390625,
+    "external": false
+  },
+  "klm4022": {
+    "size_kb": 121.2333984375,
+    "external": true
+  },
+  "klm7769": {
+    "size_kb": 120.18359375,
+    "external": true
+  },
+  "klm7770": {
+    "size_kb": 121.12109375,
+    "external": true
+  },
+  "klm7771": {
+    "size_kb": 120.09765625,
+    "external": true
+  },
+  "klm7772": {
+    "size_kb": 121.4755859375,
+    "external": true
+  },
+  "klm7773": {
+    "size_kb": 120.4658203125,
+    "external": true
+  },
+  "klm7774": {
+    "size_kb": 120.509765625,
+    "external": true
+  },
+  "klm7775": {
+    "size_kb": 120.0703125,
+    "external": true
+  },
+  "klm7776": {
+    "size_kb": 121.3759765625,
+    "external": true
+  },
+  "klm11154": {
+    "size_kb": 120.3955078125,
+    "external": true
+  },
+  "oma2831": {
+    "size_kb": 120.4658203125,
+    "external": true
+  },
+  "oma2832": {
+    "size_kb": 119.8115234375,
+    "external": true
+  },
+  "oma2833": {
+    "size_kb": 1.029296875,
+    "external": false
+  },
+  "lsb201": {
+    "size_kb": 118.984375,
+    "external": true
+  },
+  "lsb202": {
+    "size_kb": 119.93359375,
+    "external": true
+  },
+  "lsb203": {
+    "size_kb": 120.4736328125,
+    "external": true
+  },
+  "lsb204": {
+    "size_kb": 120.625,
+    "external": true
+  },
+  "lsb205": {
+    "size_kb": 124.6640625,
+    "external": true
+  },
+  "lsb206": {
+    "size_kb": 120.62890625,
+    "external": true
+  },
+  "lsb207": {
+    "size_kb": 121.775390625,
+    "external": true
+  },
+  "lsb208": {
+    "size_kb": 119.9658203125,
+    "external": true
+  },
+  "lsb209": {
+    "size_kb": 120.572265625,
+    "external": true
+  },
+  "lsb210": {
+    "size_kb": 122.404296875,
+    "external": true
+  },
+  "lsb211": {
+    "size_kb": 120.3916015625,
+    "external": true
+  },
+  "lsb212": {
+    "size_kb": 120.94921875,
+    "external": true
+  },
+  "lsb213": {
+    "size_kb": 120.2001953125,
+    "external": true
+  },
+  "um1376": {
+    "size_kb": 0.8837890625,
+    "external": false
+  },
+  "um1613": {
+    "size_kb": 119.0869140625,
+    "external": true
+  },
+  "um1804": {
+    "size_kb": 0.8837890625,
+    "external": false
+  },
+  "um2349": {
+    "size_kb": 117.8740234375,
+    "external": true
+  },
+  "um26846": {
+    "size_kb": 0.951171875,
+    "external": false
+  },
+  "um42119": {
+    "size_kb": 0.8974609375,
+    "external": false
+  },
+  "ed0487": {
+    "size_kb": 0.92578125,
+    "external": false
+  },
+  "luhm_onumrerad": {
+    "size_kb": 116.6484375,
+    "external": true
+  },
+  "luhm12772": {
+    "size_kb": 121.58203125,
+    "external": true
+  },
+  "luhm13151": {
+    "size_kb": 121.9375,
+    "external": true
+  },
+  "luhm13152": {
+    "size_kb": 119.3828125,
+    "external": true
+  },
+  "luhm13153": {
+    "size_kb": 120.576171875,
+    "external": true
+  },
+  "luhm2358": {
+    "size_kb": 0.8876953125,
+    "external": false
+  },
+  "luhm3229": {
+    "size_kb": 121.548828125,
+    "external": true
+  },
+  "luhm3230": {
+    "size_kb": 124.677734375,
+    "external": true
+  },
+  "luhm3231": {
+    "size_kb": 121.3505859375,
+    "external": true
+  },
+  "luhm3232": {
+    "size_kb": 123.7099609375,
+    "external": true
+  },
+  "luhm3233": {
+    "size_kb": 117.6171875,
+    "external": true
+  },
+  "luhm3234": {
+    "size_kb": 121.0693359375,
+    "external": true
+  },
+  "luhm3235": {
+    "size_kb": 121.2353515625,
+    "external": true
+  },
+  "luhm3236": {
+    "size_kb": 121.828125,
+    "external": true
+  },
+  "luhm3237": {
+    "size_kb": 119.875,
+    "external": true
+  },
+  "luhm3238": {
+    "size_kb": 119.8857421875,
+    "external": true
+  },
+  "luhm3239": {
+    "size_kb": 119.919921875,
+    "external": true
+  },
+  "luhm3240": {
+    "size_kb": 120.3564453125,
+    "external": true
+  },
+  "luhm3241": {
+    "size_kb": 120.9853515625,
+    "external": true
+  },
+  "luhm3242": {
+    "size_kb": 0.919921875,
+    "external": false
+  },
+  "luhm3243": {
+    "size_kb": 120.5283203125,
+    "external": true
+  },
+  "luhm3244": {
+    "size_kb": 0.9111328125,
+    "external": false
+  },
+  "luhm3245": {
+    "size_kb": 0.9052734375,
+    "external": false
+  },
+  "luhm3246": {
+    "size_kb": 0.9052734375,
+    "external": false
+  },
+  "luhm3247": {
+    "size_kb": 0.9052734375,
+    "external": false
+  },
+  "luhm3248": {
+    "size_kb": 0.9052734375,
+    "external": false
+  },
+  "luhm3249": {
+    "size_kb": 0.9052734375,
+    "external": false
+  },
+  "luhm3250": {
+    "size_kb": 0.9052734375,
+    "external": false
+  },
+  "luhm3251": {
+    "size_kb": 0.9052734375,
+    "external": false
+  },
+  "luhm3252": {
+    "size_kb": 0.9052734375,
+    "external": false
+  },
+  "luhm3253": {
+    "size_kb": 0.9052734375,
+    "external": false
+  },
+  "luhm3254": {
+    "size_kb": 0.9052734375,
+    "external": false
+  },
+  "luhm3255": {
+    "size_kb": 0.9052734375,
+    "external": false
+  },
+  "luhm3256": {
+    "size_kb": 0.9052734375,
+    "external": false
+  },
+  "luhm3257": {
+    "size_kb": 0.9169921875,
+    "external": false
+  },
+  "luhm3258": {
+    "size_kb": 0.9052734375,
+    "external": false
+  },
+  "luhm3259": {
+    "size_kb": 120.8466796875,
+    "external": true
+  },
+  "luhm3260": {
+    "size_kb": 121.1396484375,
+    "external": true
+  },
+  "luhm3261": {
+    "size_kb": 119.748046875,
+    "external": true
+  },
+  "luhm3262": {
+    "size_kb": 118.837890625,
+    "external": true
+  },
+  "luhm3263": {
+    "size_kb": 120.7314453125,
+    "external": true
+  },
+  "luhm3269": {
+    "size_kb": 0.8876953125,
+    "external": false
+  },
+  "luhm355": {
+    "size_kb": 119.6865234375,
+    "external": true
+  },
+  "luhm355b": {
+    "size_kb": 0.9453125,
+    "external": false
+  },
+  "luhm356": {
+    "size_kb": 117.5009765625,
+    "external": true
+  },
+  "luhm4344": {
+    "size_kb": 0.8876953125,
+    "external": false
+  },
+  "km129": {
+    "size_kb": 120.7041015625,
+    "external": true
+  },
+  "jm379": {
+    "size_kb": 0.900390625,
+    "external": false
+  },
+  "jm4243": {
+    "size_kb": 1.033203125,
+    "external": false
+  },
+  "jm7321": {
+    "size_kb": 0.8916015625,
+    "external": false
+  },
+  "jm7322": {
+    "size_kb": 1.0693359375,
+    "external": false
+  },
+  "jm7323": {
+    "size_kb": 1.046875,
+    "external": false
+  },
+  "ISSUE04": {
+    "size_kb": 0.8671875,
+    "external": false
+  },
+  "5257": {
+    "size_kb": 1.0888671875,
+    "external": false
+  },
+  "10338": {
+    "size_kb": 1.08984375,
+    "external": false
+  },
+  "10339": {
+    "size_kb": 0.974609375,
+    "external": false
+  },
+  "10340": {
+    "size_kb": 0.970703125,
+    "external": false
+  },
+  "10341": {
+    "size_kb": 1.099609375,
+    "external": false
+  },
+  "10342": {
+    "size_kb": 1.01171875,
+    "external": false
+  },
+  "abo1705": {
+    "size_kb": 0.9716796875,
+    "external": false
+  },
+  "d191962": {
+    "size_kb": 0.9580078125,
+    "external": false
+  },
+  "d2083": {
+    "size_kb": 0.9482421875,
+    "external": false
+  },
+  "kbh286451": {
+    "size_kb": 1.0693359375,
+    "external": false
+  },
+  "dcxviii": {
+    "size_kb": 1.1015625,
+    "external": false
+  },
+  "dcxx": {
+    "size_kb": 1.080078125,
+    "external": false
+  },
+  "nonumber": {
+    "size_kb": 1.1015625,
+    "external": false
+  },
+  "kbh333": {
+    "size_kb": 1.037109375,
+    "external": false
+  },
+  "kbh251859": {
+    "size_kb": 0.8798828125,
+    "external": false
+  },
+  "vasa537": {
+    "size_kb": 119.302734375,
+    "external": true
+  },
+  "zornmuseet": {
+    "size_kb": 121.7451171875,
+    "external": true
+  },
+  "private_morakyrka": {
+    "size_kb": 123.068359375,
+    "external": true
+  },
+  "private_brunnsberg": {
+    "size_kb": 124.1484375,
+    "external": true
+  },
+  "fullero_2": {
+    "size_kb": 125.7041015625,
+    "external": true
+  },
+  "fullero_3": {
+    "size_kb": 119.4345703125,
+    "external": true
+  },
+  "fullero_4": {
+    "size_kb": 120.59375,
+    "external": true
+  },
+  "fullero_5": {
+    "size_kb": 121.1611328125,
+    "external": true
+  },
+  "fullero_6": {
+    "size_kb": 121.1728515625,
+    "external": true
+  },
+  "fullero_7": {
+    "size_kb": 120.6708984375,
+    "external": true
+  },
+  "private_stugun": {
+    "size_kb": 122.537109375,
+    "external": true
+  },
+  "private_rättvik": {
+    "size_kb": 123.41796875,
+    "external": true
+  },
+  "private_signhildsberg": {
+    "size_kb": 125.9052734375,
+    "external": true
+  },
+  "private_drew": {
+    "size_kb": 122.822265625,
+    "external": true
+  },
+  "private_tubingen": {
+    "size_kb": 123.6416015625,
+    "external": true
+  },
+  "m140": {
+    "size_kb": 115.55078125,
+    "external": true
+  },
+  "m13103": {
+    "size_kb": 122.05078125,
+    "external": true
+  },
+  "m13718": {
+    "size_kb": 121.9140625,
+    "external": true
+  },
+  "gfdep252": {
+    "size_kb": 120.7744140625,
+    "external": true
+  },
+  "gfdep253": {
+    "size_kb": 121.3359375,
+    "external": true
+  },
+  "sala16": {
+    "size_kb": 0.88671875,
+    "external": false
+  },
+  "sala17": {
+    "size_kb": 0.88671875,
+    "external": false
+  },
+  "sala18": {
+    "size_kb": 121.53125,
+    "external": true
+  },
+  "mv23115": {
+    "size_kb": 0.8876953125,
+    "external": false
+  },
+  "mv32116": {
+    "size_kb": 0.8876953125,
+    "external": false
+  },
+  "kbh1328": {
+    "size_kb": 131.046875,
+    "external": true
+  },
+  "parissaintegenevieve": {
+    "size_kb": 122.494140625,
+    "external": true
+  },
+  "k495": {
+    "size_kb": 0.9033203125,
+    "external": false
+  },
+  "k_gubbstaven": {
+    "size_kb": 1.044921875,
+    "external": false
+  },
+  "fla218004": {
+    "size_kb": 119.1123046875,
+    "external": true
+  },
+  "fla218020": {
+    "size_kb": 120.369140625,
+    "external": true
+  },
+  "fla218158": {
+    "size_kb": 119.541015625,
+    "external": true
+  },
+  "clarke1824_1": {
+    "size_kb": 119.2548828125,
+    "external": true
+  },
+  "clarke1824_2": {
+    "size_kb": 118.9638671875,
+    "external": true
+  },
+  "shm77392": {
+    "size_kb": 120.42578125,
+    "external": true
+  },
+  "shm21283": {
+    "size_kb": 122.59375,
+    "external": true
+  },
+  "shm21144": {
+    "size_kb": 0.9091796875,
+    "external": false
+  },
+  "jansson1963": {
+    "size_kb": 120.0654296875,
+    "external": true
+  },
+  "nm1943": {
+    "size_kb": 118.1572265625,
+    "external": true
+  },
+  "wistrand1891_1": {
+    "size_kb": 1.0888671875,
+    "external": false
+  },
+  "wistrand1891_2": {
+    "size_kb": 1.052734375,
+    "external": false
+  },
+  "lodosestaven": {
+    "size_kb": 125.1455078125,
+    "external": true
+  },
+  "nykopingsstaven": {
+    "size_kb": 119.193359375,
+    "external": true
+  },
+  "nm111576": {
+    "size_kb": 1.025390625,
+    "external": false
+  },
+  "magnusson1877": {
+    "size_kb": 122.259765625,
+    "external": true
+  },
+  "magnusson1879": {
+    "size_kb": 121.119140625,
+    "external": true
+  },
+  "nm174984": {
+    "size_kb": 0.9013671875,
+    "external": false
+  },
+  "nm174895": {
+    "size_kb": 116.5546875,
+    "external": true
+  },
+  "nm18938": {
+    "size_kb": 1.072265625,
+    "external": false
+  },
+  "tmm22538": {
+    "size_kb": 0.9765625,
+    "external": false
+  },
+  "tmm1741": {
+    "size_kb": 0.9443359375,
+    "external": false
+  },
+  "tmm2427": {
+    "size_kb": 0.896484375,
+    "external": false
+  },
+  "tmm13397": {
+    "size_kb": 0.8994140625,
+    "external": false
+  },
+  "tmm1739": {
+    "size_kb": 0.896484375,
+    "external": false
+  },
+  "tmm1740": {
+    "size_kb": 0.9326171875,
+    "external": false
+  },
+  "tmm5907": {
+    "size_kb": 0.9462890625,
+    "external": false
+  },
+  "k1231": {
+    "size_kb": 0.90234375,
+    "external": false
+  },
+  "k2281": {
+    "size_kb": 0.93359375,
+    "external": false
+  },
+  "k1643": {
+    "size_kb": 0.9140625,
+    "external": false
+  },
+  "k408": {
+    "size_kb": 0.943359375,
+    "external": false
+  },
+  "su3544_1": {
+    "size_kb": 0.892578125,
+    "external": false
+  },
+  "k6765_1": {
+    "size_kb": 0.9453125,
+    "external": false
+  },
+  "su5155_1": {
+    "size_kb": 0.9375,
+    "external": false
+  },
+  "k751": {
+    "size_kb": 0.9189453125,
+    "external": false
+  },
+  "k1410": {
+    "size_kb": 0.8818359375,
+    "external": false
+  },
+  "k685": {
+    "size_kb": 0.8798828125,
+    "external": false
+  },
+  "k1078": {
+    "size_kb": 0.9453125,
+    "external": false
+  },
+  "k2218_199": {
+    "size_kb": 0.89453125,
+    "external": false
+  },
+  "k2218_198": {
+    "size_kb": 0.9345703125,
+    "external": false
+  },
+  "su5227_4": {
+    "size_kb": 0.908203125,
+    "external": false
+  },
+  "unknown_nrk": {
+    "size_kb": 0.8837890625,
+    "external": false
+  },
+  "k5407": {
+    "size_kb": 117.9169921875,
+    "external": true
+  },
+  "nm132556": {
+    "size_kb": 118.9423828125,
+    "external": true
+  },
+  "nbm2248": {
+    "size_kb": 118.3662109375,
+    "external": true
+  },
+  "lubeck322": {
+    "size_kb": 119.8486328125,
+    "external": true
+  },
+  "private_ihre": {
+    "size_kb": 119.7138671875,
+    "external": true
+  },
+  "nm175012": {
+    "size_kb": 121.552734375,
+    "external": true
+  },
+  "nm175075": {
+    "size_kb": 118.087890625,
+    "external": true
+  },
+  "fullero_8": {
+    "size_kb": 120.02734375,
+    "external": true
+  },
+  "nm174929": {
+    "size_kb": 120.3857421875,
+    "external": true
+  },
+  "nm174930": {
+    "size_kb": 118.3740234375,
+    "external": true
+  },
+  "nm175006": {
+    "size_kb": 118.6162109375,
+    "external": true
+  },
+  "nm175007": {
+    "size_kb": 119.2275390625,
+    "external": true
+  },
+  "nm175011": {
+    "size_kb": 119.9775390625,
+    "external": true
+  },
+  "nm175019": {
+    "size_kb": 118.4501953125,
+    "external": true
+  },
+  "nm175074": {
+    "size_kb": 118.2333984375,
+    "external": true
+  },
+  "vot132": {
+    "size_kb": 120.2255859375,
+    "external": true
+  },
+  "lateran_au3235": {
+    "size_kb": 122.673828125,
+    "external": true
+  },
+  "private_graan": {
+    "size_kb": 119.2412109375,
+    "external": true
+  },
+  "private_virgin": {
+    "size_kb": 119.78515625,
+    "external": true
+  },
+  "umf1916": {
+    "size_kb": 117.5478515625,
+    "external": true
+  },
+  "bn79731": {
+    "size_kb": 121.447265625,
+    "external": true
+  },
+  "private_aronson": {
+    "size_kb": 120.3876953125,
+    "external": true
+  },
+  "k2259": {
+    "size_kb": 116.380859375,
+    "external": true
+  },
+  "nm175078": {
+    "size_kb": 120.3427734375,
+    "external": true
+  },
+  "mff2082": {
+    "size_kb": 117.1650390625,
+    "external": true
+  },
+  "nc529": {
+    "size_kb": 118.66796875,
+    "external": true
+  },
+  "lin1219": {
+    "size_kb": 0.9814453125,
+    "external": false
+  },
+  "raa1824": {
+    "size_kb": 1.0,
+    "external": false
+  },
+  "raa084": {
+    "size_kb": 0.9384765625,
+    "external": false
+  },
+  "raa092": {
+    "size_kb": 0.9384765625,
+    "external": false
+  },
+  "raa085": {
+    "size_kb": 1.033203125,
+    "external": false
+  },
+  "raa086": {
+    "size_kb": 1.0947265625,
+    "external": false
+  },
+  "raa088": {
+    "size_kb": 0.90625,
+    "external": false
+  },
+  "raa089": {
+    "size_kb": 0.90625,
+    "external": false
+  },
+  "raa090": {
+    "size_kb": 0.90625,
+    "external": false
+  },
+  "raa091": {
+    "size_kb": 0.90625,
+    "external": false
+  },
+  "raasoderstrom": {
+    "size_kb": 1.064453125,
+    "external": false
+  },
+  "lrk18438": {
+    "size_kb": 0.947265625,
+    "external": false
+  },
+  "nm54060": {
+    "size_kb": 0.9375,
+    "external": false
+  },
+  "nm174899": {
+    "size_kb": 0.97265625,
+    "external": false
+  },
+  "nm115928": {
+    "size_kb": 115.8017578125,
+    "external": true
+  },
+  "nm13799": {
+    "size_kb": 118.802734375,
+    "external": true
+  },
+  "nm155827": {
+    "size_kb": 115.705078125,
+    "external": true
+  },
+  "nm87273": {
+    "size_kb": 116.3974609375,
+    "external": true
+  }
+}

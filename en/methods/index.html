@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods and analysis – Runestaves – A Digital Catalog</title>
+    <meta name="description" content="Explore Sweden&#39;s runestaves: medieval calendars carved in wood, preserved in museum collections">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+    
+    <link rel="stylesheet" href="/en/assets/site.css">
+
+    
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    
+    <header>
+        <nav class="container">
+            <ul>
+                <li><strong><a href="/en/">Runestaves – A Digital Catalog</a></strong></li>
+            </ul>
+            <ul>
+                <li><a href="/en/">Map</a></li>
+                <li><a href="/en/browse/">Browse</a></li>
+                <li><a href="/en/methods/">Methods</a></li>
+                <li><a href="/en/about/">About</a></li>
+                <li><a href="/en/data/">Data</a></li>
+                <li><a href="/methods/" class="lang-switch">Byt till svenska</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main id="main-content" class="container">
+        
+<article class="methods-page">
+    <h1>Methods and analysis</h1>
+
+    <div class="content">
+        <h1>Methods and analysis</h1>
+<p>Runestaves are medieval and early modern calendars carved in wood. This project uses digital methods to analyze these artifacts and understand how calendar knowledge spread and varied across time and geography.</p>
+<h2>Data collection and transcription</h2>
+<p>All data has been transcribed from physical runestaves in museum collections. The transcription includes:</p>
+<ul>
+<li>Date annotations (day by day through the year)</li>
+<li>Feast days and saint names</li>
+<li>Symbols and markings</li>
+<li>Physical properties (material, shape, size)</li>
+</ul>
+<h2>Normalization</h2>
+<p>To enable comparisons between runestaves, feast names are normalized to canonical forms. This makes it possible to identify the same feast even when it is spelled or written in different ways.</p>
+<h2>Phylogenetic analysis</h2>
+<p>We use methods from phylogenetic analysis to investigate similarities and differences between runestaves. The analysis is based on presence or absence of normalized feasts.</p>
+    </div>
+
+    <section class="phylogeny-section">
+        <h2>Phylogenetic analysis</h2>
+
+        <figure>
+            <img src="/en/assets/phylogeny_dendrogram.png"
+                 alt="Phylogenetic analysis - Dendrogram"
+                 loading="lazy">
+            <figcaption>Hierarchical clustering tree based on presence/absence of 268 canonical feasts across 669 runestaves. Distances computed in 3-component PCA space (27% variance). Average linkage (UPGMA).</figcaption>
+        </figure>
+
+        <figure>
+            <img src="/en/assets/phylogeny_pca.png"
+                 alt="Phylogenetic analysis - PCA"
+                 loading="lazy">
+            <figcaption>PCA projection of runestaves (two-dimensional views from three components). Colors encode periods; shapes encode dioceses.</figcaption>
+        </figure>
+    </section>
+</article>
+
+    </main>
+
+    
+    <footer class="container">
+        <hr>
+        <div class="footer-content">
+            <p>
+                <strong>Runestaves – A Digital Catalog</strong><br>
+                Licensed under CC-BY 4.0<br>
+                <small>Version 0.1.0 • Last updated 2025-10-24</small>
+            </p>
+            <p>
+                Created by Uppsala University<br>
+                Funded by Riksbankens Jubileumsfond (RJ)
+            </p>
+            <p class="museum-ack">
+                <small>With thanks to Sweden&#39;s museums for their contributions</small>
+            </p>
+        </div>
+
+        
+        <div class="footer-logos">
+            <div class="logo-placeholder" aria-label="Uppsala University">
+                <!-- Uppsala University logo will be placed here -->
+            </div>
+            <div class="logo-placeholder" aria-label="Riksbankens Jubileumsfond">
+                <!-- RJ logo will be placed here -->
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>

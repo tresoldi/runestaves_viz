@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse runestaves – Runestaves – A Digital Catalog</title>
+    <meta name="description" content="Explore Sweden&#39;s runestaves: medieval calendars carved in wood, preserved in museum collections">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+    
+    <link rel="stylesheet" href="/en/assets/site.css">
+
+    
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    
+    <header>
+        <nav class="container">
+            <ul>
+                <li><strong><a href="/en/">Runestaves – A Digital Catalog</a></strong></li>
+            </ul>
+            <ul>
+                <li><a href="/en/">Map</a></li>
+                <li><a href="/en/browse/">Browse</a></li>
+                <li><a href="/en/methods/">Methods</a></li>
+                <li><a href="/en/about/">About</a></li>
+                <li><a href="/en/data/">Data</a></li>
+                <li><a href="/browse/" class="lang-switch">Byt till svenska</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main id="main-content" class="container">
+        
+<div class="browse-page">
+    <div class="browse-header">
+        <h1>Browse runestaves</h1>
+
+        <div class="browse-controls">
+            <label for="sort-select">Sort by</label>
+            <select id="sort-select">
+                <option value="catalog">A–Z (catalog)</option>
+                <option value="period">Period</option>
+                <option value="diocese">Diocese</option>
+            </select>
+
+            <button id="toggle-filters-browse" class="secondary">
+                ☰ Filters
+            </button>
+        </div>
+    </div>
+
+    
+    <div class="result-counter">
+        <span id="result-count">Showing <strong id="visible-count">0</strong> of <strong id="total-count">0</strong> runestaves</span>
+    </div>
+
+    
+    <div id="active-filters" class="active-filters" style="display: none;">
+        <div class="filter-chips" id="filter-chips"></div>
+        <button id="clear-filters" class="secondary">Clear filters</button>
+    </div>
+
+    <div class="browse-layout">
+        
+        <aside id="filter-sidebar" class="filter-sidebar" style="display: none;">
+            <h3></h3>
+
+            <details open>
+                <summary>Period</summary>
+                <div class="filter-group" id="filter-period"></div>
+            </details>
+
+            <details>
+                <summary>Diocese</summary>
+                <div class="filter-group" id="filter-diocese"></div>
+            </details>
+
+            <details>
+                <summary>Material</summary>
+                <div class="filter-group" id="filter-material"></div>
+            </details>
+
+            <details>
+                <summary>Shape</summary>
+                <div class="filter-group" id="filter-shape"></div>
+            </details>
+
+            <details>
+                <summary>Symbol categories</summary>
+                <div class="filter-group filter-checkboxes" id="filter-symbols"></div>
+            </details>
+
+            <div class="filter-actions">
+                <button id="apply-filters">Apply</button>
+                <button id="reset-filters" class="secondary">Reset</button>
+            </div>
+        </aside>
+
+        
+        <div class="calendar-grid-container">
+            <div id="calendar-grid" class="calendar-grid">
+                
+            </div>
+
+            
+            <div id="pagination" class="pagination">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    </main>
+
+    
+    <footer class="container">
+        <hr>
+        <div class="footer-content">
+            <p>
+                <strong>Runestaves – A Digital Catalog</strong><br>
+                Licensed under CC-BY 4.0<br>
+                <small>Version 0.1.0 • Last updated 2025-10-24</small>
+            </p>
+            <p>
+                Created by Uppsala University<br>
+                Funded by Riksbankens Jubileumsfond (RJ)
+            </p>
+            <p class="museum-ack">
+                <small>With thanks to Sweden&#39;s museums for their contributions</small>
+            </p>
+        </div>
+
+        
+        <div class="footer-logos">
+            <div class="logo-placeholder" aria-label="Uppsala University">
+                <!-- Uppsala University logo will be placed here -->
+            </div>
+            <div class="logo-placeholder" aria-label="Riksbankens Jubileumsfond">
+                <!-- RJ logo will be placed here -->
+            </div>
+        </div>
+    </footer>
+
+    
+
+<script src="/en/assets/browse.js"></script>
+
+
+<script>
+    const browseConfig = {
+        lang: 'en',
+        baseUrl: '/en',
+        dataUrl: '/en/data/map_markers.geojson',
+        translations: {"about": {"acknowledgments": "Acknowledgments", "acknowledgments_text": "We thank all museums and institutions that contributed data and images.", "affiliation": "Affiliation", "affiliation_text": "Uppsala University", "contact": "Contact", "funding": "Funding", "funding_text": "This project is funded by the Swedish Foundation for Humanities and Social Sciences (Riksbankens Jubileumsfond, RJ).", "license": "License", "project": {"text": "This project digitizes and analyzes Sweden\u0027s preserved runestaves, with data from museums and collections across the country.", "title": "About the project"}, "team": "Project team", "title": "About the project", "what_are_runestaves": {"text": "Runestaves (also called primstaves) are medieval and early modern calendars carved in wood. They were used to keep track of feast days, saints\u0027 days, and important information about the year\u0027s cycle.", "title": "What are runestaves?"}}, "accessibility": {"close_menu": "Close menu", "error": "Error", "loading": "Loading", "open_menu": "Open menu", "skip_to_content": "Skip to content"}, "browse": {"no_image": "Image coming soon", "page": "Page", "results_per_page": "Results per page", "sort_by": "Sort by", "sort_catalog": "A\u2013Z (catalog)", "sort_diocese": "Diocese", "sort_period": "Period", "title": "Browse runestaves", "view_calendar": "View calendar"}, "calendar": {"back_to_map": "Back to map", "dating": "Dating and context", "dating_info": {"normalized": "Normalized time period", "original": "Original dating", "period_explanation": "Period classification based on midpoint between", "uncertainty": "Uncertainty"}, "feast_table": {"day": "Day", "day_of_year": "Day of year", "feast_canonical": "Canonical feast", "feast_mark": "Feast mark", "feast_original": "Feast (original)", "filter_month": "Filter month", "filter_type": "Filter type", "golden_number": "Golden number", "month": "Month", "notes": "Notes", "rune": "Rune", "search_feasts": "Search feasts...", "sunday_letter": "Sunday letter", "type": "Type"}, "feasts": "Feasts", "metadata": {"catalog": "Catalog number", "completeness": "Completeness", "dimensions": "Dimensions", "diocese": "Diocese", "institute": "Institution", "location": "Location", "material": "Material", "period": "Period", "row_fest": "Row marking", "shape": "Shape", "sides": "Number of sides", "socken": "Parish", "solar": "Solar system", "transcriber": "Transcriber", "year": "Year"}, "overview": "Overview", "references": "References and data", "show_on_map": "Show on map", "symbol_summary": {"by_category": "By category", "by_type": "By type", "co_occurring": "Most common symbol pairs", "complex_days": "Days with complex markings", "count": "Count", "show_less": "Show less", "show_more": "Show more", "title": "Symbol summary", "writing_samples": "Writing samples"}, "symbols": "Symbols", "title": "Runestave"}, "data_page": {"citation": {"text": "If you use this data in your research, please cite:", "title": "Cite this work"}, "github": {"text": "Project code and documentation are available on GitHub:", "title": "Source code"}, "intro": "All data from this project is openly available under CC-BY 4.0 license.", "license_text": "This data is published under Creative Commons Attribution 4.0 International License (CC-BY 4.0).", "title": "Data and citation", "zenodo": {"text": "The complete dataset is available on Zenodo:", "title": "Dataset"}}, "filters": {"active": "active filters", "apply": "Apply", "completeness": "Completeness", "diocese": "Diocese", "material": "Material", "period": "Period", "reset": "Reset", "row_fest": "Row marking", "shape": "Shape", "sides": "Sides", "solar": "Solar system", "symbols": "Symbol categories"}, "footer": {"created_by": "Created by", "funded_by": "Funded by", "license": "Licensed under CC-BY 4.0", "museum_acknowledgment": "With thanks to Sweden\u0027s museums for their contributions"}, "map": {"calendars": "runestaves", "clear_filters": "Clear filters", "cluster_text": "runestaves", "filters": "Filters", "loading": "Loading map...", "no_results": "No runestaves match your filters", "of": "of", "showing": "Showing", "title": "Runestaves on the map", "view_details": "View details"}, "methods": {"intro": "This page describes the methods used to analyze runestaves.", "phylogeny": {"dendrogram_caption": "Hierarchical clustering tree based on presence/absence of 268 canonical feasts across 669 runestaves. Distances computed in 3-component PCA space (27% variance). Average linkage (UPGMA).", "pca_caption": "PCA projection of runestaves (two-dimensional views from three components). Colors encode periods; shapes encode dioceses.", "title": "Phylogenetic analysis"}, "title": "Methods and analysis"}, "months": {"1": "January", "10": "October", "11": "November", "12": "December", "2": "February", "3": "March", "4": "April", "5": "May", "6": "June", "7": "July", "8": "August", "9": "September"}, "nav": {"about": "About", "browse": "Browse", "data": "Data", "home": "Home", "language_switch": "Byt till svenska", "map": "Map", "methods": "Methods", "search": "Search"}, "periods": {"16th_century": "16th century", "17th_century": "17th century", "18th_century": "18th century", "19th_century": "19th century", "medieval": "Medieval", "unknown": "Unknown"}, "search": {"found": "Found", "matches": "matches", "no_results": "No results found", "placeholder": "Search for location, diocese, feasts, symbols...", "results": "Search results", "searching": "Searching..."}, "site": {"description": "Explore Sweden\u0027s runestaves: medieval calendars carved in wood, preserved in museum collections", "language": "English", "language_code": "en", "last_updated": "Last updated", "title": "Runestaves \u2013 A Digital Catalog", "version": "Version"}, "symbol_categories": {"agricultural": "Agricultural symbols", "animals": "Animals", "drinking": "Drinking", "generic": "Generic markings", "geometric": "Geometric shapes", "human": "Human figures", "liturgical": "Liturgical symbols", "natural_phenomena": "Natural phenomena", "notation": "Notation", "occupational": "Occupational", "plants": "Plants", "religious": "Religious symbols", "royal": "Royal symbols", "text": "Text", "tools": "Tools"}},
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+        initializeBrowse(browseConfig);
+    });
+</script>
+
+</body>
+</html>

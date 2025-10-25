@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bläddra runstavar – Runstavar – En digital katalog</title>
+    <meta name="description" content="Utforska Sveriges runstavar: medeltida kalendrar ristade i trä, bevarade i museers samlingar">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+    
+    <link rel="stylesheet" href="/assets/site.css">
+
+    
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">Hoppa till innehåll</a>
+
+    
+    <header>
+        <nav class="container">
+            <ul>
+                <li><strong><a href="/">Runstavar – En digital katalog</a></strong></li>
+            </ul>
+            <ul>
+                <li><a href="/">Karta</a></li>
+                <li><a href="/bladdra/">Bläddra</a></li>
+                <li><a href="/metod/">Metod</a></li>
+                <li><a href="/om/">Om</a></li>
+                <li><a href="/data/">Data</a></li>
+                <li><a href="/en/bladdra/" class="lang-switch">Switch to English</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main id="main-content" class="container">
+        
+<div class="browse-page">
+    <div class="browse-header">
+        <h1>Bläddra runstavar</h1>
+
+        <div class="browse-controls">
+            <label for="sort-select">Sortera efter</label>
+            <select id="sort-select">
+                <option value="catalog">A–Ö (katalog)</option>
+                <option value="period">Period</option>
+                <option value="diocese">Stift</option>
+            </select>
+
+            <button id="toggle-filters-browse" class="secondary">
+                ☰ Filter
+            </button>
+        </div>
+    </div>
+
+    
+    <div class="result-counter">
+        <span id="result-count">Visar <strong id="visible-count">0</strong> av <strong id="total-count">0</strong> runstavar</span>
+    </div>
+
+    
+    <div id="active-filters" class="active-filters" style="display: none;">
+        <div class="filter-chips" id="filter-chips"></div>
+        <button id="clear-filters" class="secondary">Rensa filter</button>
+    </div>
+
+    <div class="browse-layout">
+        
+        <aside id="filter-sidebar" class="filter-sidebar" style="display: none;">
+            <h3></h3>
+
+            <details open>
+                <summary>Period</summary>
+                <div class="filter-group" id="filter-period"></div>
+            </details>
+
+            <details>
+                <summary>Stift</summary>
+                <div class="filter-group" id="filter-diocese"></div>
+            </details>
+
+            <details>
+                <summary>Material</summary>
+                <div class="filter-group" id="filter-material"></div>
+            </details>
+
+            <details>
+                <summary>Form</summary>
+                <div class="filter-group" id="filter-shape"></div>
+            </details>
+
+            <details>
+                <summary>Symbolkategorier</summary>
+                <div class="filter-group filter-checkboxes" id="filter-symbols"></div>
+            </details>
+
+            <div class="filter-actions">
+                <button id="apply-filters">Tillämpa</button>
+                <button id="reset-filters" class="secondary">Återställ</button>
+            </div>
+        </aside>
+
+        
+        <div class="calendar-grid-container">
+            <div id="calendar-grid" class="calendar-grid">
+                
+            </div>
+
+            
+            <div id="pagination" class="pagination">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+    </main>
+
+    
+    <footer class="container">
+        <hr>
+        <div class="footer-content">
+            <p>
+                <strong>Runstavar – En digital katalog</strong><br>
+                Licensierad under CC-BY 4.0<br>
+                <small>Version 0.1.0 • Senast uppdaterad 2025-10-24</small>
+            </p>
+            <p>
+                Skapad av Uppsala University<br>
+                Finansierat av Riksbankens Jubileumsfond (RJ)
+            </p>
+            <p class="museum-ack">
+                <small>Med tack till Sveriges museer för deras bidrag</small>
+            </p>
+        </div>
+
+        
+        <div class="footer-logos">
+            <div class="logo-placeholder" aria-label="Uppsala University">
+                <!-- Uppsala University logo will be placed here -->
+            </div>
+            <div class="logo-placeholder" aria-label="Riksbankens Jubileumsfond">
+                <!-- RJ logo will be placed here -->
+            </div>
+        </div>
+    </footer>
+
+    
+
+<script src="/assets/browse.js"></script>
+
+
+<script>
+    const browseConfig = {
+        lang: 'sv',
+        baseUrl: '',
+        dataUrl: '/data/map_markers.geojson',
+        translations: {"about": {"acknowledgments": "Tack till", "acknowledgments_text": "Vi tackar alla museer och institutioner som bidragit med data och bilder.", "affiliation": "Tillh\u00f6righet", "affiliation_text": "Uppsala universitet", "contact": "Kontakt", "funding": "Finansiering", "funding_text": "Detta projekt finansieras av Riksbankens Jubileumsfond (RJ).", "license": "Licens", "project": {"text": "Detta projekt digitaliserar och analyserar Sveriges bevarade runstavar, med data fr\u00e5n museer och samlingar i hela landet.", "title": "Om projektet"}, "team": "Projektteam", "title": "Om projektet", "what_are_runestaves": {"text": "Runstavar (\u00e4ven kallade primstavar) \u00e4r medeltida och tidigmoderna kalendrar ristade i tr\u00e4. De anv\u00e4ndes f\u00f6r att h\u00e5lla reda p\u00e5 h\u00f6gtider, helgons dagar och viktig information om \u00e5rets g\u00e5ng.", "title": "Vad \u00e4r runstavar?"}}, "accessibility": {"close_menu": "St\u00e4ng meny", "error": "Fel", "loading": "Laddar", "open_menu": "\u00d6ppna meny", "skip_to_content": "Hoppa till inneh\u00e5ll"}, "browse": {"no_image": "Bild kommer snart", "page": "Sida", "results_per_page": "Resultat per sida", "sort_by": "Sortera efter", "sort_catalog": "A\u2013\u00d6 (katalog)", "sort_diocese": "Stift", "sort_period": "Period", "title": "Bl\u00e4ddra runstavar", "view_calendar": "Visa kalender"}, "calendar": {"back_to_map": "Tillbaka till kartan", "dating": "Datering och kontext", "dating_info": {"normalized": "Normaliserad tidsperiod", "original": "Original datering", "period_explanation": "Periodklassificering baserad p\u00e5 mitt\u00e5ret mellan", "uncertainty": "Os\u00e4kerhet"}, "feast_table": {"day": "Dag", "day_of_year": "Dag p\u00e5 \u00e5ret", "feast_canonical": "Kanonisk h\u00f6gtid", "feast_mark": "H\u00f6gtidsmarkering", "feast_original": "H\u00f6gtid (original)", "filter_month": "Filtrera m\u00e5nad", "filter_type": "Filtrera typ", "golden_number": "Gyllental", "month": "M\u00e5nad", "notes": "Anteckningar", "rune": "Runa", "search_feasts": "S\u00f6k h\u00f6gtider...", "sunday_letter": "S\u00f6ndagsbokstav", "type": "Typ"}, "feasts": "H\u00f6gtider", "metadata": {"catalog": "Katalognummer", "completeness": "Fullst\u00e4ndighet", "dimensions": "M\u00e5tt", "diocese": "Stift", "institute": "Institution", "location": "Plats", "material": "Material", "period": "Period", "row_fest": "Radmarkering", "shape": "Form", "sides": "Antal sidor", "socken": "Socken", "solar": "Solsystem", "transcriber": "Transkribent", "year": "\u00c5r"}, "overview": "\u00d6versikt", "references": "Referenser och data", "show_on_map": "Visa p\u00e5 kartan", "symbol_summary": {"by_category": "Efter kategori", "by_type": "Efter typ", "co_occurring": "Vanligaste symbolpar", "complex_days": "Dagar med komplexa markeringar", "count": "Antal", "show_less": "Visa f\u00e4rre", "show_more": "Visa fler", "title": "Symbolsammanfattning", "writing_samples": "Skriftprover"}, "symbols": "Symboler", "title": "Runstav"}, "data_page": {"citation": {"text": "Om du anv\u00e4nder denna data i din forskning, v\u00e4nligen citera:", "title": "Citera detta arbete"}, "github": {"text": "Projektkod och dokumentation finns p\u00e5 GitHub:", "title": "K\u00e4llkod"}, "intro": "All data fr\u00e5n detta projekt \u00e4r \u00f6ppet tillg\u00e4nglig under CC-BY 4.0-licens.", "license_text": "Denna data publiceras under Creative Commons Attribution 4.0 International License (CC-BY 4.0).", "title": "Data och citat", "zenodo": {"text": "Den fullst\u00e4ndiga dataupps\u00e4ttningen finns tillg\u00e4nglig p\u00e5 Zenodo:", "title": "Dataupps\u00e4ttning"}}, "filters": {"active": "aktiva filter", "apply": "Till\u00e4mpa", "completeness": "Fullst\u00e4ndighet", "diocese": "Stift", "material": "Material", "period": "Period", "reset": "\u00c5terst\u00e4ll", "row_fest": "Radmarkering", "shape": "Form", "sides": "Sidor", "solar": "Solsystem", "symbols": "Symbolkategorier"}, "footer": {"created_by": "Skapad av", "funded_by": "Finansierat av", "license": "Licensierad under CC-BY 4.0", "museum_acknowledgment": "Med tack till Sveriges museer f\u00f6r deras bidrag"}, "map": {"calendars": "runstavar", "clear_filters": "Rensa filter", "cluster_text": "runstavar", "filters": "Filter", "loading": "Laddar karta...", "no_results": "Inga runstavar matchar dina filter", "of": "av", "showing": "Visar", "title": "Runstavar p\u00e5 kartan", "view_details": "Visa detaljer"}, "methods": {"intro": "Denna sida beskriver de metoder som anv\u00e4nds f\u00f6r att analysera runstavar.", "phylogeny": {"dendrogram_caption": "Hierarkiskt klustertr\u00e4d baserat p\u00e5 n\u00e4rvaro/avsaknad av 268 normaliserade h\u00f6gtider p\u00e5 669 runstavar. Avst\u00e5nd ber\u00e4knas i ett PCA-rum (3 komponenter; 27 % varians). Genomsnittsl\u00e4nkage (UPGMA).", "pca_caption": "PCA-projektion av runstavar (tv\u00e5dimensionella vyer ur tre komponenter). F\u00e4rger markerar perioder; former markerar stift.", "title": "Fylogenetisk analys"}, "title": "Metod och analys"}, "months": {"1": "Januari", "10": "Oktober", "11": "November", "12": "December", "2": "Februari", "3": "Mars", "4": "April", "5": "Maj", "6": "Juni", "7": "Juli", "8": "Augusti", "9": "September"}, "nav": {"about": "Om", "browse": "Bl\u00e4ddra", "data": "Data", "home": "Start", "language_switch": "Switch to English", "map": "Karta", "methods": "Metod", "search": "S\u00f6k"}, "periods": {"16th_century": "1500-talet", "17th_century": "1600-talet", "18th_century": "1700-talet", "19th_century": "1800-talet", "medieval": "Medeltid", "unknown": "Ok\u00e4nt"}, "search": {"found": "Hittade", "matches": "tr\u00e4ffar", "no_results": "Inga resultat hittades", "placeholder": "S\u00f6k efter plats, stift, h\u00f6gtider, symboler...", "results": "S\u00f6kresultat", "searching": "S\u00f6ker..."}, "site": {"description": "Utforska Sveriges runstavar: medeltida kalendrar ristade i tr\u00e4, bevarade i museers samlingar", "language": "Svenska", "language_code": "sv", "last_updated": "Senast uppdaterad", "title": "Runstavar \u2013 En digital katalog", "version": "Version"}, "symbol_categories": {"agricultural": "Jordbrukssymboler", "animals": "Djur", "drinking": "Dryck", "generic": "Generiska markeringar", "geometric": "Geometriska former", "human": "M\u00e4nniskor", "liturgical": "Liturgiska symboler", "natural_phenomena": "Naturfenomen", "notation": "Notation", "occupational": "Yrken", "plants": "V\u00e4xter", "religious": "Religi\u00f6sa symboler", "royal": "Kungliga symboler", "text": "Text", "tools": "Verktyg"}},
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+        initializeBrowse(browseConfig);
+    });
+</script>
+
+</body>
+</html>

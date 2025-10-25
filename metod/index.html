@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metod och analys – Runstavar – En digital katalog</title>
+    <meta name="description" content="Utforska Sveriges runstavar: medeltida kalendrar ristade i trä, bevarade i museers samlingar">
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+
+    
+    <link rel="stylesheet" href="/assets/site.css">
+
+    
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">Hoppa till innehåll</a>
+
+    
+    <header>
+        <nav class="container">
+            <ul>
+                <li><strong><a href="/">Runstavar – En digital katalog</a></strong></li>
+            </ul>
+            <ul>
+                <li><a href="/">Karta</a></li>
+                <li><a href="/bladdra/">Bläddra</a></li>
+                <li><a href="/metod/">Metod</a></li>
+                <li><a href="/om/">Om</a></li>
+                <li><a href="/data/">Data</a></li>
+                <li><a href="/en/metod/" class="lang-switch">Switch to English</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <main id="main-content" class="container">
+        
+<article class="methods-page">
+    <h1>Metod och analys</h1>
+
+    <div class="content">
+        <h1>Metod och analys</h1>
+<p>Runstavar är medeltida och tidigmoderna kalendrar ristade i trä. Detta projekt använder digitala metoder för att analysera dessa artefakter och förstå hur kalenderkunskap spreds och varierade över tid och geografi.</p>
+<h2>Datainsamling och transkription</h2>
+<p>All data har transkriberats från fysiska runstavar i museers samlingar. Transkriptionen inkluderar:</p>
+<ul>
+<li>Datumangivelser (dag för dag genom året)</li>
+<li>Högtider och helgonnamn</li>
+<li>Symboler och markeringar</li>
+<li>Fysiska egenskaper (material, form, storlek)</li>
+</ul>
+<h2>Normalisering</h2>
+<p>För att möjliggöra jämförelser mellan runstavar normaliseras högtidsnamn till kanoniska former. Detta gör det möjligt att identifiera samma högtid även när den stavas eller skrivs på olika sätt.</p>
+<h2>Fylogenetisk analys</h2>
+<p>Vi använder metoder från fylogenetisk analys för att undersöka likheter och skillnader mellan runstavar. Analysen baseras på närvaro eller frånvaro av normaliserade högtider.</p>
+    </div>
+
+    <section class="phylogeny-section">
+        <h2>Fylogenetisk analys</h2>
+
+        <figure>
+            <img src="/assets/phylogeny_dendrogram.png"
+                 alt="Fylogenetisk analys - Dendrogram"
+                 loading="lazy">
+            <figcaption>Hierarkiskt klusterträd baserat på närvaro/avsaknad av 268 normaliserade högtider på 669 runstavar. Avstånd beräknas i ett PCA-rum (3 komponenter; 27 % varians). Genomsnittslänkage (UPGMA).</figcaption>
+        </figure>
+
+        <figure>
+            <img src="/assets/phylogeny_pca.png"
+                 alt="Fylogenetisk analys - PCA"
+                 loading="lazy">
+            <figcaption>PCA-projektion av runstavar (tvådimensionella vyer ur tre komponenter). Färger markerar perioder; former markerar stift.</figcaption>
+        </figure>
+    </section>
+</article>
+
+    </main>
+
+    
+    <footer class="container">
+        <hr>
+        <div class="footer-content">
+            <p>
+                <strong>Runstavar – En digital katalog</strong><br>
+                Licensierad under CC-BY 4.0<br>
+                <small>Version 0.1.0 • Senast uppdaterad 2025-10-24</small>
+            </p>
+            <p>
+                Skapad av Uppsala University<br>
+                Finansierat av Riksbankens Jubileumsfond (RJ)
+            </p>
+            <p class="museum-ack">
+                <small>Med tack till Sveriges museer för deras bidrag</small>
+            </p>
+        </div>
+
+        
+        <div class="footer-logos">
+            <div class="logo-placeholder" aria-label="Uppsala University">
+                <!-- Uppsala University logo will be placed here -->
+            </div>
+            <div class="logo-placeholder" aria-label="Riksbankens Jubileumsfond">
+                <!-- RJ logo will be placed here -->
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
