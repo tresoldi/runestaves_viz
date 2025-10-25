@@ -304,6 +304,14 @@ button.secondary {
   z-index: 1000;
 }
 
+/* Leaflet marker cluster - fix alignment */
+.marker-cluster div {
+  margin-left: 5px;
+  margin-top: 5px;
+  text-align: center;
+  line-height: 30px;
+}
+
 /* Leaflet popup customization */
 .leaflet-popup-content-wrapper {
   background-color: var(--card-background);
